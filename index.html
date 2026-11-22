@@ -1,0 +1,1558 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>抖音风弹力插混剪每日大赛 - 官方赛事平台_原创高清剪辑竞技社区</title>
+<meta name="description" content="抖音风弹力插混剪每日大赛官方网站，每日更新主题赛题与高清原创混剪作品，汇聚专业创作者、评审与剪辑爱好者，持续运营的垂直混剪内容生态与报名投稿平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0d12'/%3E%3Cpath d='M26 18 L48 32 L26 46 Z' fill='%23ff2e63'/%3E%3Crect x='12' y='18' width='6' height='28' rx='3' fill='%2300e5ff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --mc-bg:#0b0d12;
+  --mc-bg2:#12151d;
+  --mc-card:#171b25;
+  --mc-card2:#1d2230;
+  --mc-line:#2a3040;
+  --mc-txt:#e8ecf5;
+  --mc-sub:#9aa5bb;
+  --mc-pink:#ff2e63;
+  --mc-pink2:#ff6b93;
+  --mc-cyan:#00e5ff;
+  --mc-lime:#c8ff3d;
+  --mc-radius:16px;
+  --mc-head-h:108px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--mc-head-h)}
+body{
+  margin:0;
+  background:
+    radial-gradient(900px 500px at 85% -8%, rgba(255,46,99,.18), transparent 62%),
+    radial-gradient(800px 460px at 8% 4%, rgba(0,229,255,.14), transparent 60%),
+    var(--mc-bg);
+  color:var(--mc-txt);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+h1,h2,h3,h4,p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+.mc-wrap{width:min(1180px,92vw);margin:0 auto}
+.mc-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ===== 吸顶：公告条 + 页头 ===== */
+.mc-stick{position:sticky;top:0;z-index:80;backdrop-filter:blur(14px);background:rgba(11,13,18,.92);border-bottom:1px solid var(--mc-line)}
+.mc-notice{
+  display:flex;align-items:center;gap:10px;
+  font-size:13px;color:#ffd9e3;
+  background:linear-gradient(90deg,rgba(255,46,99,.22),rgba(0,229,255,.16));
+  border-bottom:1px solid rgba(255,46,99,.28);
+}
+.mc-notice .mc-wrap{display:flex;align-items:center;gap:12px;padding:7px 0;min-height:34px}
+.mc-notice-tag{
+  flex:none;font-size:11px;font-weight:700;letter-spacing:.12em;
+  background:var(--mc-pink);color:#fff;padding:2px 8px;border-radius:4px;
+}
+.mc-notice-txt{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;flex:1}
+.mc-notice-txt b{color:#fff}
+.mc-notice-more{flex:none;font-size:12px;color:var(--mc-cyan);border-bottom:1px dashed rgba(0,229,255,.5)}
+
+.mc-header{display:flex;align-items:center;gap:18px;padding:12px 0}
+.mc-brand{display:flex;align-items:center;gap:11px;flex:none}
+.mc-brand-mark{
+  width:42px;height:42px;border-radius:12px;flex:none;
+  background:linear-gradient(140deg,var(--mc-pink),#8b2bff 65%,var(--mc-cyan));
+  display:grid;place-items:center;box-shadow:0 0 22px rgba(255,46,99,.42);
+}
+.mc-brand-mark svg{width:22px;height:22px}
+.mc-brand-txt strong{display:block;font-size:16px;letter-spacing:.02em;line-height:1.2}
+.mc-brand-txt span{display:block;font-size:11px;color:var(--mc-sub);letter-spacing:.22em}
+.mc-nav{display:flex;align-items:center;gap:4px;margin-left:8px;flex:1;min-width:0}
+.mc-nav a{
+  font-size:14px;color:#c3cbdc;padding:8px 12px;border-radius:9px;white-space:nowrap;
+  transition:.22s;position:relative;
+}
+.mc-nav a:hover{color:#fff;background:rgba(255,255,255,.07)}
+.mc-nav a::after{
+  content:"";position:absolute;left:12px;right:12px;bottom:4px;height:2px;
+  background:var(--mc-pink);transform:scaleX(0);transition:.25s;border-radius:2px;
+}
+.mc-nav a:hover::after{transform:scaleX(1)}
+.mc-head-tools{display:flex;align-items:center;gap:10px;flex:none}
+.mc-search{position:relative;display:flex;align-items:center}
+.mc-search input{
+  width:190px;height:38px;border-radius:19px;border:1px solid var(--mc-line);
+  background:var(--mc-card);color:var(--mc-txt);padding:0 40px 0 16px;font-size:13px;
+  outline:none;transition:.25s;
+}
+.mc-search input:focus{border-color:var(--mc-pink);width:230px;box-shadow:0 0 0 3px rgba(255,46,99,.14)}
+.mc-search button{
+  position:absolute;right:4px;width:30px;height:30px;border:none;border-radius:50%;
+  background:transparent;color:var(--mc-sub);display:grid;place-items:center;font-size:15px;
+}
+.mc-search button:hover{color:var(--mc-pink)}
+.mc-search-tip{
+  position:absolute;top:46px;left:0;right:0;background:var(--mc-card2);border:1px solid var(--mc-line);
+  border-radius:12px;padding:8px;font-size:12.5px;color:var(--mc-sub);display:none;z-index:90;
+  box-shadow:0 16px 40px rgba(0,0,0,.5);
+}
+.mc-search-tip.mc-on{display:block}
+.mc-search-tip li{padding:6px 8px;border-radius:7px;cursor:pointer}
+.mc-search-tip li:hover{background:rgba(255,46,99,.14);color:#fff}
+.mc-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  font-size:14px;font-weight:600;border-radius:999px;padding:10px 20px;border:1px solid transparent;
+  transition:.24s;white-space:nowrap;
+}
+.mc-btn-pink{background:linear-gradient(120deg,var(--mc-pink),#ff5c85);color:#fff;box-shadow:0 8px 24px rgba(255,46,99,.32)}
+.mc-btn-pink:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(255,46,99,.46)}
+.mc-btn-ghost{border-color:var(--mc-line);color:#d8dfec;background:rgba(255,255,255,.03)}
+.mc-btn-ghost:hover{border-color:var(--mc-cyan);color:var(--mc-cyan)}
+.mc-burger{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--mc-line);background:var(--mc-card);color:#fff;font-size:18px}
+
+/* ===== 首屏：全幅主视觉背景 + 浮动文字 ===== */
+.mc-hero{position:relative;overflow:hidden;border-bottom:1px solid var(--mc-line)}
+.mc-hero-bg{position:absolute;inset:0;z-index:0}
+.mc-hero-bg svg{width:100%;height:100%;object-fit:cover}
+.mc-hero-veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,13,18,.96) 0%,rgba(11,13,18,.82) 46%,rgba(11,13,18,.34) 100%)}
+.mc-hero-inner{position:relative;z-index:2;padding:64px 0 56px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:40px;align-items:center}
+.mc-hero-eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:.16em;color:var(--mc-cyan);border:1px solid rgba(0,229,255,.4);border-radius:999px;padding:5px 14px;background:rgba(0,229,255,.07)}
+.mc-dot{width:7px;height:7px;border-radius:50%;background:var(--mc-lime);box-shadow:0 0 10px var(--mc-lime);animation:mcPulse 1.6s infinite}
+@keyframes mcPulse{0%,100%{opacity:1}50%{opacity:.35}}
+.mc-hero h1{
+  font-size:clamp(32px,4.4vw,58px);line-height:1.14;margin:18px 0 14px;letter-spacing:-.01em;font-weight:800;
+  background:linear-gradient(100deg,#fff 30%,#ffb3c6 60%,var(--mc-cyan));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.mc-hero h1 em{font-style:normal;display:inline-block;background:linear-gradient(100deg,var(--mc-pink),#ff9a3d);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mc-hero-lead{font-size:16px;color:#c6cfe0;max-width:640px}
+.mc-hero-brandline{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 4px}
+.mc-chip{font-size:12px;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--mc-line);color:#cfd7e6}
+.mc-chip-hot{background:rgba(255,46,99,.16);border-color:rgba(255,46,99,.5);color:#ffb8c9}
+.mc-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 26px}
+.mc-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:560px}
+.mc-stat{
+  background:rgba(23,27,37,.78);border:1px solid var(--mc-line);border-radius:13px;padding:12px 14px;
+  transition:.25s;
+}
+.mc-stat:hover{border-color:rgba(0,229,255,.5);transform:translateY(-3px)}
+.mc-stat b{display:block;font-size:clamp(19px,2.2vw,26px);color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.mc-stat b i{font-style:normal;font-size:12.5px;color:var(--mc-pink);margin-left:3px}
+.mc-stat span{font-size:12px;color:var(--mc-sub)}
+.mc-hero-art{position:relative}
+.mc-hero-art .mc-hero-frame{
+  border-radius:22px;overflow:hidden;border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 30px 70px rgba(0,0,0,.6),0 0 0 6px rgba(255,46,99,.07);
+  transform:rotate(-1.2deg);
+}
+.mc-hero-art .mc-hero-frame svg{width:100%;height:auto;aspect-ratio:16/11}
+.mc-hero-badge{
+  position:absolute;bottom:-14px;left:-14px;background:var(--mc-card2);border:1px solid var(--mc-line);
+  border-radius:14px;padding:10px 16px;font-size:12.5px;color:#cfd7e6;box-shadow:0 16px 40px rgba(0,0,0,.55);
+  display:flex;align-items:center;gap:9px;
+}
+.mc-hero-badge b{color:var(--mc-lime);font-size:15px}
+
+/* ===== 通用 section ===== */
+.mc-sec{padding:62px 0;border-bottom:1px solid rgba(42,48,64,.65)}
+.mc-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:30px}
+.mc-sec-kicker{font-size:12px;letter-spacing:.24em;color:var(--mc-pink);font-weight:700;margin-bottom:8px}
+.mc-sec-head h2{font-size:clamp(24px,2.9vw,34px);line-height:1.25;letter-spacing:-.01em;font-weight:800}
+.mc-sec-head h2 span{color:var(--mc-cyan)}
+.mc-sec-desc{font-size:13.5px;color:var(--mc-sub);max-width:520px;margin-top:8px}
+.mc-h2-line{width:56px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--mc-pink),var(--mc-cyan));margin-top:12px}
+
+/* 焦点：一大 + 三小 文字推荐 */
+.mc-focus{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:22px;align-items:start}
+.mc-focus-main{
+  background:var(--mc-card);border:1px solid var(--mc-line);border-radius:var(--mc-radius);overflow:hidden;
+  transition:.28s;
+}
+.mc-focus-main:hover{transform:translateY(-4px);border-color:rgba(255,46,99,.55);box-shadow:0 22px 50px rgba(0,0,0,.5)}
+.mc-focus-main svg{width:100%;height:auto;aspect-ratio:16/9}
+.mc-focus-body{padding:18px 20px 20px}
+.mc-focus-body h3{font-size:20px;line-height:1.4;margin-bottom:8px}
+.mc-focus-body p{font-size:13.5px;color:#b7c1d3}
+.mc-meta{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:12px;font-size:12.5px;color:var(--mc-sub)}
+.mc-meta .mc-tag{background:rgba(0,229,255,.12);color:var(--mc-cyan);padding:2px 9px;border-radius:5px;font-size:11.5px}
+.mc-focus-list{display:grid;gap:14px}
+.mc-focus-item{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;
+  background:var(--mc-card);border:1px solid var(--mc-line);border-radius:13px;padding:14px 16px;transition:.24s;
+}
+.mc-focus-item:hover{border-color:rgba(200,255,61,.5);background:var(--mc-card2);transform:translateX(3px)}
+.mc-focus-item h3{font-size:15px;line-height:1.45;margin-bottom:5px}
+.mc-focus-item p{font-size:12.5px;color:var(--mc-sub)}
+.mc-focus-item .mc-num{font-size:26px;font-weight:800;color:transparent;-webkit-text-stroke:1px var(--mc-pink);line-height:1}
+.mc-act{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--mc-sub);border:1px solid var(--mc-line);background:transparent;border-radius:999px;padding:5px 12px;transition:.2s}
+.mc-act:hover{color:var(--mc-cyan);border-color:var(--mc-cyan)}
+.mc-act.mc-liked{color:var(--mc-pink);border-color:rgba(255,46,99,.6);background:rgba(255,46,99,.1)}
+.mc-act.mc-saved{color:var(--mc-lime);border-color:rgba(200,255,61,.55);background:rgba(200,255,61,.08)}
+.mc-act-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+
+/* 视频卡：三列等高 */
+.mc-vgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.mc-vcard{background:var(--mc-card);border:1px solid var(--mc-line);border-radius:var(--mc-radius);overflow:hidden;display:flex;flex-direction:column;transition:.26s}
+.mc-vcard:hover{transform:translateY(-5px);border-color:rgba(0,229,255,.45);box-shadow:0 22px 46px rgba(0,0,0,.5)}
+.mc-vcard-img{position:relative}
+.mc-vcard-img svg{width:100%;height:auto;aspect-ratio:16/9}
+.mc-play{
+  position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.55));
+}
+.mc-play span{
+  width:48px;height:48px;border-radius:50%;background:rgba(255,46,99,.9);display:grid;place-items:center;
+  color:#fff;font-size:16px;box-shadow:0 0 0 8px rgba(255,46,99,.16);transition:.24s;
+}
+.mc-vcard:hover .mc-play span{transform:scale(1.12);box-shadow:0 0 0 12px rgba(255,46,99,.22)}
+.mc-vcard-body{padding:15px 16px 17px;display:flex;flex-direction:column;gap:8px;flex:1}
+.mc-vcard-body h3{font-size:15.5px;line-height:1.45}
+.mc-vcard-body p{font-size:12.8px;color:var(--mc-sub);flex:1}
+.mc-tagrow{display:flex;flex-wrap:wrap;gap:6px}
+.mc-tagrow span{font-size:11px;padding:2px 8px;border-radius:5px;background:rgba(255,255,255,.06);color:#b9c4d6;border:1px solid var(--mc-line)}
+.mc-tagrow span.mc-tag-pink{background:rgba(255,46,99,.14);color:#ffb0c3;border-color:rgba(255,46,99,.36)}
+
+/* 文字列表视频流 */
+.mc-vlist{display:grid;gap:12px}
+.mc-vrow{
+  display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:16px;align-items:center;
+  background:var(--mc-card);border:1px solid var(--mc-line);border-radius:13px;padding:14px 18px;transition:.24s;
+}
+.mc-vrow:hover{border-color:rgba(255,46,99,.5);background:var(--mc-card2)}
+.mc-vrow-idx{font-size:19px;font-weight:800;color:var(--mc-pink);font-variant-numeric:tabular-nums}
+.mc-vrow h3{font-size:15px;line-height:1.45;margin-bottom:4px}
+.mc-vrow p{font-size:12.5px;color:var(--mc-sub)}
+.mc-vrow-side{display:flex;flex-direction:column;align-items:flex-end;gap:7px;font-size:12px;color:var(--mc-sub)}
+.mc-vrow-side .mc-dat{color:#c7d0e0}
+
+/* 专题 */
+.mc-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.mc-topic{background:linear-gradient(160deg,var(--mc-card2),var(--mc-card));border:1px solid var(--mc-line);border-radius:var(--mc-radius);padding:20px;display:flex;flex-direction:column;gap:11px;transition:.26s}
+.mc-topic:hover{border-color:rgba(200,255,61,.5);transform:translateY(-4px)}
+.mc-topic-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.mc-topic h3{font-size:17px;line-height:1.4}
+.mc-status{font-size:11px;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.mc-status-on{background:rgba(200,255,61,.14);color:var(--mc-lime);border:1px solid rgba(200,255,61,.4)}
+.mc-status-soon{background:rgba(0,229,255,.12);color:var(--mc-cyan);border:1px solid rgba(0,229,255,.35)}
+.mc-topic p{font-size:12.8px;color:var(--mc-sub)}
+.mc-topic ul{display:grid;gap:7px;margin-top:2px}
+.mc-topic li{font-size:12.8px;color:#c2cbdb;padding-left:16px;position:relative}
+.mc-topic li::before{content:"›";position:absolute;left:3px;color:var(--mc-pink);font-weight:700}
+.mc-topic-img{border-radius:11px;overflow:hidden;border:1px solid var(--mc-line)}
+.mc-topic-img svg{width:100%;height:auto;aspect-ratio:16/7}
+
+/* 作者矩阵：双列简介 */
+.mc-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.mc-author{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;background:var(--mc-card);border:1px solid var(--mc-line);border-radius:var(--mc-radius);padding:18px;transition:.26s}
+.mc-author:hover{border-color:rgba(0,229,255,.5);transform:translateY(-3px)}
+.mc-avatar{width:60px;height:60px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:22px;font-weight:800;color:#fff;letter-spacing:.02em}
+.mc-author h3{font-size:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.mc-author h3 small{font-size:11px;font-weight:500;color:var(--mc-pink);border:1px solid rgba(255,46,99,.45);border-radius:5px;padding:1px 7px}
+.mc-author .mc-arole{font-size:12.5px;color:var(--mc-cyan);margin:3px 0 7px}
+.mc-author p{font-size:12.8px;color:#b3bdd0}
+.mc-author-fig{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--mc-sub);margin-top:9px}
+.mc-author-fig b{color:#fff;font-variant-numeric:tabular-nums}
+.mc-author-btn{margin-top:10px}
+
+/* 榜单 */
+.mc-board{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.mc-board-col{background:var(--mc-card);border:1px solid var(--mc-line);border-radius:var(--mc-radius);padding:18px}
+.mc-board-col h3{font-size:15px;display:flex;align-items:center;gap:8px;margin-bottom:14px}
+.mc-board-col h3 i{width:4px;height:16px;border-radius:3px;background:var(--mc-pink);display:inline-block;font-style:normal}
+.mc-board-col:nth-child(2) h3 i{background:var(--mc-cyan)}
+.mc-board-col:nth-child(3) h3 i{background:var(--mc-lime)}
+.mc-board-col li{display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:10px;align-items:center;padding:9px 0;border-bottom:1px dashed rgba(42,48,64,.9);font-size:13px}
+.mc-board-col li:last-child{border-bottom:none}
+.mc-board-col li b{font-size:13px;color:var(--mc-sub);font-weight:600}
+.mc-board-col li em{font-style:normal;color:var(--mc-pink);font-weight:700;font-size:12px;font-variant-numeric:tabular-nums}
+.mc-board-col li span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* 评价：双列短评 */
+.mc-cmt-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.mc-cmt{background:var(--mc-card);border:1px solid var(--mc-line);border-left:3px solid var(--mc-pink);border-radius:12px;padding:16px 18px;transition:.24s}
+.mc-cmt:nth-child(even){border-left-color:var(--mc-cyan)}
+.mc-cmt:hover{background:var(--mc-card2)}
+.mc-cmt-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.mc-cmt-ava{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;color:#fff;flex:none}
+.mc-cmt-top strong{font-size:13.5px}
+.mc-cmt-top span{font-size:11.5px;color:var(--mc-sub);margin-left:auto}
+.mc-cmt p{font-size:13px;color:#bcc6d8}
+.mc-cmt .mc-stars{color:#ffc94d;font-size:12px;letter-spacing:2px;margin-top:8px}
+
+/* 品牌故事 / 关键词解析 */
+.mc-story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:34px;align-items:start}
+.mc-story-art{border-radius:var(--mc-radius);overflow:hidden;border:1px solid var(--mc-line);position:sticky;top:calc(var(--mc-head-h) + 16px)}
+.mc-story-art svg{width:100%;height:auto;aspect-ratio:4/5}
+.mc-prose h3{font-size:17.5px;margin:22px 0 9px;color:#fff;display:flex;gap:9px;align-items:baseline}
+.mc-prose h3:first-child{margin-top:0}
+.mc-prose h3 i{font-style:normal;font-size:12px;color:var(--mc-pink);font-weight:700;letter-spacing:.1em}
+.mc-prose p{font-size:14px;color:#b8c2d4;margin-bottom:10px;text-align:justify}
+.mc-prose strong{color:var(--mc-cyan);font-weight:600}
+.mc-quote{
+  margin:20px 0;padding:16px 20px;border-radius:12px;background:rgba(255,46,99,.08);
+  border:1px solid rgba(255,46,99,.3);font-size:13.8px;color:#ffd4de;line-height:1.8;
+}
+.mc-quote cite{display:block;font-size:12px;color:var(--mc-sub);font-style:normal;margin-top:6px}
+
+/* 动态 / 合作 / 投稿 */
+.mc-aux{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.mc-panel{background:var(--mc-card);border:1px solid var(--mc-line);border-radius:var(--mc-radius);padding:22px}
+.mc-panel h3{font-size:17px;margin-bottom:14px;display:flex;align-items:center;gap:9px}
+.mc-panel h3 i{width:4px;height:17px;border-radius:3px;background:var(--mc-cyan);display:inline-block;font-style:normal}
+.mc-news li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;padding:10px 0;border-bottom:1px dashed rgba(42,48,64,.9);font-size:13px}
+.mc-news li:last-child{border-bottom:none}
+.mc-news time{color:var(--mc-pink);font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.mc-news p{color:#bcc6d8}
+.mc-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.mc-partner{display:flex;align-items:center;gap:11px;border:1px solid var(--mc-line);border-radius:11px;padding:11px 12px;font-size:13px;color:#cfd8e7;transition:.22s}
+.mc-partner:hover{border-color:rgba(200,255,61,.45);background:var(--mc-card2)}
+.mc-partner i{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-size:13px;font-weight:800;color:#0b0d12;font-style:normal;flex:none}
+
+/* FAQ */
+.mc-faq{display:grid;gap:11px}
+.mc-faq details{background:var(--mc-card);border:1px solid var(--mc-line);border-radius:12px;padding:0 18px;transition:.22s}
+.mc-faq details[open]{border-color:rgba(255,46,99,.45);background:var(--mc-card2)}
+.mc-faq summary{
+  cursor:pointer;list-style:none;padding:15px 30px 15px 0;font-size:14px;font-weight:600;position:relative;
+}
+.mc-faq summary::-webkit-details-marker{display:none}
+.mc-faq summary::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);color:var(--mc-pink);font-size:19px;font-weight:400}
+.mc-faq details[open] summary::after{content:"–"}
+.mc-faq details p{font-size:13px;color:#b6c0d2;padding:0 0 15px;line-height:1.8}
+
+/* 页脚 */
+.mc-footer{background:#080a0f;padding:52px 0 26px;border-top:1px solid var(--mc-line)}
+.mc-foot-top{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));gap:32px}
+.mc-foot-brand p{font-size:12.8px;color:var(--mc-sub);max-width:330px;margin-top:12px}
+.mc-foot-col h4{font-size:13.5px;margin-bottom:12px;color:#fff}
+.mc-foot-col li{font-size:12.8px;color:var(--mc-sub);padding:5px 0}
+.mc-foot-col li:hover{color:var(--mc-cyan);cursor:pointer}
+.mc-foot-bottom{margin-top:34px;padding-top:18px;border-top:1px solid var(--mc-line);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:12px;color:#6f7b90}
+.mc-foot-bottom a{color:#8f9bb0}
+.mc-foot-bottom a:hover{color:var(--mc-cyan)}
+
+/* 回到顶部 + Toast + 弹窗 */
+.mc-top{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;border:1px solid var(--mc-line);
+  background:var(--mc-card2);color:#fff;font-size:18px;z-index:70;display:grid;place-items:center;
+  opacity:0;visibility:hidden;transform:translateY(12px);transition:.28s;
+}
+.mc-top.mc-on{opacity:1;visibility:visible;transform:none}
+.mc-top:hover{border-color:var(--mc-pink);color:var(--mc-pink)}
+.mc-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);z-index:120;
+  background:var(--mc-card2);border:1px solid var(--mc-line);color:#fff;font-size:13px;
+  padding:11px 20px;border-radius:999px;box-shadow:0 18px 44px rgba(0,0,0,.6);
+  opacity:0;visibility:hidden;transition:.28s;white-space:nowrap;max-width:90vw;
+}
+.mc-toast.mc-on{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.mc-modal{position:fixed;inset:0;z-index:130;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(4,6,10,.78);backdrop-filter:blur(6px)}
+.mc-modal.mc-on{display:flex}
+.mc-modal-box{background:var(--mc-card2);border:1px solid var(--mc-line);border-radius:18px;width:min(520px,94vw);padding:24px;box-shadow:0 30px 80px rgba(0,0,0,.7)}
+.mc-modal-box h3{font-size:18px;margin-bottom:6px}
+.mc-modal-box .mc-modal-sub{font-size:12.5px;color:var(--mc-sub);margin-bottom:16px}
+.mc-modal-box label{display:block;font-size:12.5px;color:#c8d1e1;margin:11px 0 5px}
+.mc-modal-box input,.mc-modal-box textarea,.mc-modal-box select{
+  width:100%;background:var(--mc-card);border:1px solid var(--mc-line);color:#fff;border-radius:9px;
+  padding:10px 12px;font-size:13px;font-family:inherit;outline:none;
+}
+.mc-modal-box input:focus,.mc-modal-box textarea:focus{border-color:var(--mc-pink)}
+.mc-modal-box textarea{resize:vertical;min-height:80px}
+.mc-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}
+
+/* 响应式 */
+@media(max-width:1000px){
+  .mc-hero-inner{grid-template-columns:minmax(0,1fr);gap:28px;padding:44px 0}
+  .mc-hero-art{max-width:560px}
+  .mc-focus{grid-template-columns:minmax(0,1fr)}
+  .mc-vgrid,.mc-topic-grid,.mc-board{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mc-story{grid-template-columns:minmax(0,1fr)}
+  .mc-story-art{position:static;max-width:420px}
+  .mc-foot-top{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+}
+@media(max-width:820px){
+  :root{--mc-head-h:96px}
+  .mc-nav{
+    position:absolute;left:0;right:0;top:100%;background:var(--mc-bg2);border-bottom:1px solid var(--mc-line);
+    flex-direction:column;align-items:stretch;padding:10px 4vw 16px;gap:2px;display:none;
+  }
+  .mc-nav.mc-open{display:flex}
+  .mc-nav a{padding:11px 14px}
+  .mc-burger{display:grid;place-items:center}
+  .mc-head-inner{position:relative}
+  .mc-search input{width:150px}
+  .mc-search input:focus{width:170px}
+  .mc-author-grid,.mc-cmt-grid,.mc-aux{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:640px){
+  .mc-vgrid,.mc-topic-grid,.mc-board{grid-template-columns:minmax(0,1fr)}
+  .mc-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mc-stats .mc-stat:last-child{grid-column:span 2}
+  .mc-vrow{grid-template-columns:32px minmax(0,1fr);gap:12px}
+  .mc-vrow-side{grid-column:2;flex-direction:row;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .mc-search{display:none}
+  .mc-foot-top{grid-template-columns:minmax(0,1fr)}
+  .mc-partners{grid-template-columns:minmax(0,1fr)}
+  .mc-sec{padding:46px 0}
+  .mc-author{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ===== S1 公告条 + 页头（吸顶） ===== -->
+<div class="mc-stick">
+  <div class="mc-notice">
+    <div class="mc-wrap">
+      <span class="mc-notice-tag">官方发布</span>
+      <span class="mc-notice-txt">第 128 期每日大赛赛题已上线：<b>「八分音符卡点·弹力插混剪」</b>，11 月 22 日 20:00 截止投稿，本期新增「新人首投加成」赛道，报名通道同步开放</span>
+      <a class="mc-notice-more" href="#mc-signup">查看赛题 →</a>
+    </div>
+  </div>
+  <header class="mc-header mc-wrap mc-head-inner">
+    <a class="mc-brand" href="#mc-top">
+      <span class="mc-brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5 L19 12 L8 18.5 Z" fill="#fff"/><rect x="3" y="5" width="2" height="14" rx="1" fill="#fff" opacity=".8"/></svg>
+      </span>
+      <span class="mc-brand-txt"><strong>抖音风弹力插混剪每日大赛</strong><span>DAILY MIX CUT ARENA</span></span>
+    </a>
+    <nav class="mc-nav" id="mc-nav" aria-label="主导航">
+      <a href="#mc-focus">焦点赛事</a>
+      <a href="#mc-videos">热门作品</a>
+      <a href="#mc-topics">专题企划</a>
+      <a href="#mc-authors">创作者</a>
+      <a href="#mc-board">榜单</a>
+      <a href="#mc-comments">社区口碑</a>
+      <a href="#mc-story">品牌故事</a>
+      <a href="#mc-faq">帮助</a>
+    </nav>
+    <div class="mc-head-tools">
+      <div class="mc-search">
+        <input type="search" id="mc-search-input" placeholder="搜索赛题 / 创作者 / 作品" aria-label="站内搜索">
+        <button type="button" id="mc-search-btn" aria-label="搜索">⌕</button>
+        <ul class="mc-search-tip" id="mc-search-tip"></ul>
+      </div>
+      <a class="mc-btn mc-btn-pink" href="#mc-signup">立即报名</a>
+      <button class="mc-burger" id="mc-burger" type="button" aria-expanded="false" aria-controls="mc-nav">☰</button>
+    </div>
+  </header>
+</div>
+
+<main id="mc-top">
+
+<!-- ===== S2 首屏：全幅主视觉背景 + 浮动文字 ===== -->
+<section class="mc-hero" aria-labelledby="mc-hero-title">
+  <div class="mc-hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 1440 720" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="mcHeroG1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#141a26"/><stop offset=".55" stop-color="#1d1230"/><stop offset="1" stop-color="#0a1a24"/>
+        </linearGradient>
+        <linearGradient id="mcHeroG2" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ff2e63"/><stop offset="1" stop-color="#00e5ff"/>
+        </linearGradient>
+        <linearGradient id="mcHeroG3" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stop-color="#c8ff3d" stop-opacity=".9"/><stop offset="1" stop-color="#c8ff3d" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <rect width="1440" height="720" fill="url(#mcHeroG1)"/>
+      <g opacity=".5">
+        <path d="M0 560 Q180 460 360 540 T720 500 T1080 560 T1440 500" stroke="url(#mcHeroG2)" stroke-width="2" fill="none"/>
+        <path d="M0 620 Q200 540 400 600 T800 570 T1200 620 T1440 580" stroke="url(#mcHeroG2)" stroke-width="1.2" fill="none" opacity=".55"/>
+      </g>
+      <g opacity=".55">
+        <rect x="900" y="120" width="420" height="260" rx="18" fill="#0e1420" stroke="#2a3040"/>
+        <rect x="924" y="146" width="372" height="150" rx="10" fill="#171b25"/>
+        <path d="M1000 230 L1060 196 L1120 232 L1180 190 L1240 226 L1290 200" stroke="#ff2e63" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <rect x="924" y="312" width="150" height="10" rx="5" fill="#2a3040"/>
+        <rect x="924" y="332" width="220" height="8" rx="4" fill="#222838"/>
+        <circle cx="1250" cy="330" r="26" fill="#00e5ff" opacity=".22"/>
+        <circle cx="1250" cy="330" r="12" fill="#00e5ff" opacity=".6"/>
+      </g>
+      <g opacity=".8">
+        <rect x="120" y="150" width="180" height="110" rx="12" fill="#171b25" stroke="#2a3040"/>
+        <rect x="140" y="172" width="60" height="60" rx="30" fill="#ff2e63" opacity=".75"/>
+        <rect x="216" y="176" width="64" height="9" rx="4" fill="#39415a"/>
+        <rect x="216" y="196" width="48" height="8" rx="4" fill="#2a3040"/>
+        <rect x="140" y="244" width="140" height="6" rx="3" fill="#2a3040"/>
+        <rect x="330" y="120" width="150" height="86" rx="12" fill="#171b25" stroke="#2a3040"/>
+        <rect x="350" y="142" width="46" height="8" rx="4" fill="#c8ff3d" opacity=".8"/>
+        <rect x="350" y="162" width="100" height="6" rx="3" fill="#2a3040"/>
+        <rect x="350" y="178" width="76" height="6" rx="3" fill="#2a3040"/>
+      </g>
+      <g stroke="#ff2e63" stroke-width="2" opacity=".35">
+        <path d="M600 640 L640 600 L680 640 L720 596 L760 644" fill="none" stroke-linecap="round"/>
+      </g>
+      <rect x="0" y="0" width="1440" height="720" fill="url(#mcHeroG3)" opacity=".18"/>
+    </svg>
+    <div class="mc-hero-veil"></div>
+  </div>
+  <div class="mc-wrap mc-hero-inner">
+    <div class="mc-hero-copy">
+      <span class="mc-hero-eyebrow"><span class="mc-dot"></span>每日更新 · 官方赛制 · 评审公开</span>
+      <h1 id="mc-hero-title">抖音风弹力插混剪<em>每日大赛</em></h1>
+      <p class="mc-hero-lead">作为深耕混剪垂直领域的官方企业级赛事平台，我们把「弹力插」这一节奏语言做成每日可参与、可评审、可复盘的公开竞技场。这里汇聚专业剪辑师、BGM 收藏家与第一次拿起时间线的新人，用高清原创作品构成持续运营的内容生态。</p>
+      <div class="mc-hero-brandline">
+        <span class="mc-chip mc-chip-hot">官方网站</span>
+        <span class="mc-chip">正版素材</span>
+        <span class="mc-chip">创作者社区</span>
+        <span class="mc-chip">每日报名</span>
+        <span class="mc-chip">榜单公示</span>
+      </div>
+      <div class="mc-hero-actions">
+        <a class="mc-btn mc-btn-pink" href="#mc-signup">报名今日赛题</a>
+        <a class="mc-btn mc-btn-ghost" href="#mc-videos">观看热门混剪</a>
+        <button class="mc-btn mc-btn-ghost" type="button" id="mc-share-btn">分享赛事页</button>
+      </div>
+      <div class="mc-stats">
+        <div class="mc-stat"><b data-mc-count="1286">0<i>期</i></b><span>已连续运营赛期</span></div>
+        <div class="mc-stat"><b data-mc-count="42700">0<i>+</i></b><span>在册创作者</span></div>
+        <div class="mc-stat"><b data-mc-count="963">0<i>万</i></b><span>累计播放（次）</span></div>
+      </div>
+    </div>
+    <div class="mc-hero-art">
+      <div class="mc-hero-frame">
+        <svg viewBox="0 0 640 440" role="img" aria-label="弹力插混剪时间线界面主视觉：多轨音频波形与卡点标记">
+          <defs>
+            <linearGradient id="mcArt1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1a2030"/><stop offset="1" stop-color="#0d1119"/>
+            </linearGradient>
+            <linearGradient id="mcArt2" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#ff2e63"/><stop offset="1" stop-color="#ff9a3d"/>
+            </linearGradient>
+            <linearGradient id="mcArt3" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#00e5ff"/><stop offset="1" stop-color="#0077ff"/>
+            </linearGradient>
+          </defs>
+          <rect width="640" height="440" fill="url(#mcArt1)"/>
+          <rect x="24" y="24" width="592" height="34" rx="8" fill="#171b25" stroke="#2a3040"/>
+          <circle cx="46" cy="41" r="5" fill="#ff2e63"/><circle cx="64" cy="41" r="5" fill="#ffc94d"/><circle cx="82" cy="41" r="5" fill="#c8ff3d"/>
+          <rect x="110" y="34" width="150" height="14" rx="7" fill="#232a3a"/>
+          <g>
+            <rect x="24" y="80" width="592" height="66" rx="8" fill="#141924" stroke="#2a3040"/>
+            <rect x="34" y="90" width="60" height="46" rx="5" fill="#1f2634"/>
+            <text x="42" y="118" font-size="12" fill="#9aa5bb" font-family="sans-serif">V1</text>
+            <rect x="104" y="90" width="120" height="46" rx="5" fill="url(#mcArt2)" opacity=".85"/>
+            <rect x="232" y="90" width="86" height="46" rx="5" fill="#2c3446"/>
+            <rect x="326" y="90" width="140" height="46" rx="5" fill="url(#mcArt3)" opacity=".75"/>
+            <rect x="474" y="90" width="132" height="46" rx="5" fill="#2c3446"/>
+          </g>
+          <g>
+            <rect x="24" y="156" width="592" height="66" rx="8" fill="#141924" stroke="#2a3040"/>
+            <rect x="34" y="166" width="60" height="46" rx="5" fill="#1f2634"/>
+            <text x="42" y="194" font-size="12" fill="#9aa5bb" font-family="sans-serif">A2</text>
+            <g fill="#c8ff3d" opacity=".85">
+              <rect x="104" y="186" width="4" height="12" rx="2"/><rect x="114" y="176" width="4" height="32" rx="2"/>
+              <rect x="124" y="170" width="4" height="44" rx="2"/><rect x="134" y="180" width="4" height="24" rx="2"/>
+              <rect x="144" y="172" width="4" height="40" rx="2"/><rect x="154" y="182" width="4" height="20" rx="2"/>
+              <rect x="164" y="174" width="4" height="36" rx="2"/><rect x="174" y="184" width="4" height="16" rx="2"/>
+              <rect x="184" y="178" width="4" height="28" rx="2"/><rect x="194" y="186" width="4" height="12" rx="2"/>
+              <rect x="204" y="174" width="4" height="36" rx="2"/><rect x="214" y="182" width="4" height="20" rx="2"/>
+              <rect x="224" y="176" width="4" height="32" rx="2"/>
+            </g>
+            <path d="M104 200 L140 176 L176 200 L212 172 L248 198 L284 178 L320 202 L356 174 L392 198 L428 180 L464 202 L500 176 L536 198 L572 178 L604 198" stroke="#00e5ff" stroke-width="2" fill="none"/>
+            <g stroke="#ff2e63" stroke-width="2" stroke-dasharray="4 5" opacity=".9">
+              <line x1="140" y1="156" x2="140" y2="222"/><line x1="212" y1="156" x2="212" y2="222"/>
+              <line x1="284" y1="156" x2="284" y2="222"/><line x1="356" y1="156" x2="356" y2="222"/>
+              <line x1="428" y1="156" x2="428" y2="222"/><line x1="500" y1="156" x2="500" y2="222"/>
+            </g>
+          </g>
+          <g>
+            <rect x="24" y="232" width="592" height="66" rx="8" fill="#141924" stroke="#2a3040"/>
+            <rect x="34" y="242" width="60" height="46" rx="5" fill="#1f2634"/>
+            <text x="40" y="270" font-size="12" fill="#9aa5bb" font-family="sans-serif">G3</text>
+            <g fill="#8f9bb0" opacity=".6">
+              <circle cx="130" cy="252" r="3"/><circle cx="170" cy="252" r="3"/><circle cx="210" cy="252" r="3"/>
+              <circle cx="250" cy="252" r="3"/><circle cx="290" cy="252" r="3"/><circle cx="330" cy="252" r="3"/>
+              <circle cx="370" cy="252" r="3"/><circle cx="410" cy="252" r="3"/><circle cx="450" cy="252" r="3"/>
+              <circle cx="490" cy="252" r="3"/><circle cx="530" cy="252" r="3"/><circle cx="570" cy="252" r="3"/>
+            </g>
+            <rect x="112" y="262" width="120" height="26" rx="5" fill="#ff2e63" opacity=".28" stroke="#ff2e63"/>
+            <rect x="262" y="262" width="90" height="26" rx="5" fill="#00e5ff" opacity=".24" stroke="#00e5ff"/>
+            <rect x="382" y="262" width="130" height="26" rx="5" fill="#c8ff3d" opacity=".2" stroke="#c8ff3d"/>
+          </g>
+          <g>
+            <rect x="24" y="308" width="592" height="52" rx="8" fill="#101520" stroke="#2a3040"/>
+            <text x="40" y="339" font-size="12" fill="#6f7b90" font-family="sans-serif">BPM 128 · 弹力插卡点</text>
+            <rect x="180" y="322" width="86" height="22" rx="11" fill="#ff2e63" opacity=".85"/>
+            <text x="196" y="338" font-size="12" fill="#fff" font-family="sans-serif">4/4 拍</text>
+            <rect x="280" y="322" width="96" height="22" rx="11" fill="#171b25" stroke="#2a3040"/>
+            <text x="296" y="338" font-size="12" fill="#9aa5bb" font-family="sans-serif">变速 0.8x</text>
+            <rect x="390" y="322" width="120" height="22" rx="11" fill="#c8ff3d" opacity=".2" stroke="#c8ff3d"/>
+            <text x="406" y="338" font-size="12" fill="#c8ff3d" font-family="sans-serif">高潮段 03:12</text>
+          </g>
+          <g>
+            <rect x="24" y="372" width="290" height="44" rx="10" fill="#171b25" stroke="#2a3040"/>
+            <circle cx="50" cy="394" r="13" fill="#ff2e63" opacity=".9"/>
+            <path d="M46 388 L56 394 L46 400 Z" fill="#fff"/>
+            <rect x="74" y="384" width="120" height="8" rx="4" fill="#39415a"/>
+            <rect x="74" y="398" width="80" height="6" rx="3" fill="#2a3040"/>
+            <rect x="326" y="372" width="290" height="44" rx="10" fill="url(#mcArt2)" opacity=".18" stroke="#ff2e63"/>
+            <text x="346" y="399" font-size="13" fill="#ffb3c6" font-family="sans-serif">今日投稿 386 条 · 评审进行中</text>
+          </g>
+        </svg>
+      </div>
+      <div class="mc-hero-badge"><b>LIVE</b> 第 128 期评审中 · 剩余 6 小时</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S3 焦点内容 ===== -->
+<section class="mc-sec" id="mc-focus" aria-labelledby="mc-focus-title">
+  <div class="mc-wrap">
+    <div class="mc-sec-head">
+      <div>
+        <p class="mc-sec-kicker">FEATURED · 今日焦点</p>
+        <h2 id="mc-focus-title">焦点赛事<span>与编辑推荐</span></h2>
+        <p class="mc-sec-desc">编辑组每日从投稿池中挑出节奏最干净、结构最完整的弹力插混剪，给出可复用的拆解笔记，让好作品不只在榜单上停留一天。</p>
+        <div class="mc-h2-line"></div>
+      </div>
+      <a class="mc-btn mc-btn-ghost" href="#mc-videos">更多热门作品</a>
+    </div>
+    <div class="mc-focus">
+      <article class="mc-focus-main">
+        <svg viewBox="0 0 640 360" role="img" aria-label="焦点作品封面：城市夜景镜头节点与弹力插卡点波形图">
+          <defs>
+            <linearGradient id="mcF1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#121826"/><stop offset=".6" stop-color="#1b1430"/><stop offset="1" stop-color="#0b1f2a"/>
+            </linearGradient>
+            <linearGradient id="mcF2" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#ff2e63"/><stop offset="1" stop-color="#c8ff3d"/>
+            </linearGradient>
+          </defs>
+          <rect width="640" height="360" fill="url(#mcF1)"/>
+          <g opacity=".45">
+            <rect x="40" y="60" width="70" height="180" rx="6" fill="#1b2231"/>
+            <rect x="120" y="100" width="60" height="140" rx="6" fill="#1b2231"/>
+            <rect x="190" y="40" width="80" height="200" rx="6" fill="#1b2231"/>
+            <rect x="280" y="120" width="54" height="120" rx="6" fill="#1b2231"/>
+            <rect x="500" y="80" width="90" height="160" rx="6" fill="#1b2231"/>
+            <g fill="#ffc94d">
+              <rect x="52" y="80" width="8" height="8"/><rect x="70" y="80" width="8" height="8"/><rect x="52" y="100" width="8" height="8"/>
+              <rect x="130" y="120" width="8" height="8"/><rect x="148" y="140" width="8" height="8"/><rect x="130" y="160" width="8" height="8"/>
+              <rect x="200" y="60" width="8" height="8"/><rect x="220" y="80" width="8" height="8"/><rect x="240" y="60" width="8" height="8"/>
+              <rect x="512" y="100" width="8" height="8"/><rect x="532" y="120" width="8" height="8"/><rect x="552" y="100" width="8" height="8"/>
+            </g>
+          </g>
+          <g>
+            <rect x="40" y="258" width="560" height="60" rx="10" fill="#0d121b" stroke="#2a3040"/>
+            <g fill="#ff2e63" opacity=".9">
+              <rect x="56" y="282" width="5" height="12"/><rect x="68" y="274" width="5" height="28"/><rect x="80" y="268" width="5" height="40"/>
+              <rect x="92" y="278" width="5" height="20"/><rect x="104" y="270" width="5" height="36"/><rect x="116" y="280" width="5" height="16"/>
+            </g>
+            <g fill="#00e5ff" opacity=".9">
+              <rect x="140" y="276" width="5" height="24"/><rect x="152" y="268" width="5" height="40"/><rect x="164" y="280" width="5" height="16"/>
+              <rect x="176" y="272" width="5" height="32"/><rect x="188" y="282" width="5" height="12"/>
+            </g>
+            <g fill="#c8ff3d" opacity=".9">
+              <rect x="220" y="270" width="5" height="36"/><rect x="232" y="278" width="5" height="20"/><rect x="244" y="266" width="5" height="44"/>
+              <rect x="256" y="280" width="5" height="16"/><rect x="268" y="274" width="5" height="28"/><rect x="280" y="284" width="5" height="8"/>
+            </g>
+            <path d="M300 288 L340 270 L380 288 L420 264 L460 288 L500 272 L540 288 L580 266" stroke="url(#mcF2)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </g>
+          <g>
+            <rect x="40" y="30" width="150" height="26" rx="13" fill="#ff2e63"/>
+            <text x="58" y="48" font-size="13" fill="#fff" font-family="sans-serif">编辑精选 · 92.4 分</text>
+          </g>
+        </svg>
+        <div class="mc-focus-body">
+          <h3>《八分音符呼吸》——把地铁进站声切成弹力插重拍</h3>
+          <p>作者「插帧老唐」用 42 个城市环境音做前奏铺垫，在第 17 秒用一声列车刹车完成全片唯一的硬切转场，之后所有镜头都跟着底鼓的 1、3 拍弹跳。整条片子没有一次炫技式转场，靠镜头长度差制造呼吸感，是本期节奏教学里被评审反复引用的一条样本。</p>
+          <div class="mc-meta">
+            <span class="mc-tag">#弹力插</span><span class="mc-tag">#卡点教学</span><span>作者：插帧老唐</span><span>播放 128.6 万</span><span>点赞 9.4 万</span>
+          </div>
+          <div class="mc-act-row">
+            <button class="mc-act" type="button" data-mc-like="1"><span>♡</span> 点赞 <b>0</b></button>
+            <button class="mc-act" type="button" data-mc-save="1">☆ 收藏</button>
+            <button class="mc-act" type="button" data-mc-share="1">↗ 复制链接</button>
+            <button class="mc-act" type="button" data-mc-author="插帧老唐">ⓘ 作者信息</button>
+          </div>
+        </div>
+      </article>
+      <ul class="mc-focus-list">
+        <li class="mc-focus-item">
+          <div>
+            <h3>《三分钟把 128 BPM 拆成四层》</h3>
+            <p>节拍分层入门示范，配完整时间线截图与素材说明。</p>
+            <div class="mc-act-row"><button class="mc-act" type="button" data-mc-like="2">♡ 点赞 <b>0</b></button><button class="mc-act" type="button" data-mc-save="2">☆ 收藏</button></div>
+          </div>
+          <span class="mc-num">01</span>
+        </li>
+        <li class="mc-focus-item">
+          <div>
+            <h3>《老片新剪：把十年前的旅行素材做成本期冠军》</h3>
+            <p>素材修复 + 变速 + 弹力插重排的完整复盘。</p>
+            <div class="mc-act-row"><button class="mc-act" type="button" data-mc-like="3">♡ 点赞 <b>0</b></button><button class="mc-act" type="button" data-mc-save="3">☆ 收藏</button></div>
+          </div>
+          <span class="mc-num">02</span>
+        </li>
+        <li class="mc-focus-item">
+          <div>
+            <h3>《新人首投就能上口碑榜？评审给了三条理由》</h3>
+            <p>关于「稳」比「炫」更重要的一次公开评审记录。</p>
+            <div class="mc-act-row"><button class="mc-act" type="button" data-mc-like="4">♡ 点赞 <b>0</b></button><button class="mc-act" type="button" data-mc-save="4">☆ 收藏</button></div>
+          </div>
+          <span class="mc-num">03</span>
+        </li>
+        <li class="mc-focus-item">
+          <div>
+            <h3>《音画对齐的 7 个常见坏习惯》</h3>
+            <p>来自 300 份投稿的共性问题汇总，附修正对照。</p>
+            <div class="mc-act-row"><button class="mc-act" type="button" data-mc-like="5">♡ 点赞 <b>0</b></button><button class="mc-act" type="button" data-mc-save="5">☆ 收藏</button></div>
+          </div>
+          <span class="mc-num">04</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S3 热门视频流 ===== -->
+<section class="mc-sec" id="mc-videos" aria-labelledby="mc-videos-title">
+  <div class="mc-wrap">
+    <div class="mc-sec-head">
+      <div>
+        <p class="mc-sec-kicker">TRENDING · 热度上升</p>
+        <h2 id="mc-videos-title">热门混剪作品<span>· 每日更新</span></h2>
+        <p class="mc-sec-desc">以下作品均来自本站官方投稿通道，作者自主上传、评审复核后进入热度池。封面为作品关键帧，正文中不再赘述重复信息。</p>
+        <div class="mc-h2-line"></div>
+      </div>
+      <a class="mc-btn mc-btn-ghost" href="#mc-board">查看完整榜单</a>
+    </div>
+
+    <div class="mc-vgrid">
+      <article class="mc-vcard">
+        <div class="mc-vcard-img">
+          <svg viewBox="0 0 480 270" role="img" aria-label="作品封面：霓虹街头行人穿过光斑的弹力插卡点画面">
+            <defs><linearGradient id="mcV1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1230"/><stop offset="1" stop-color="#231025"/></linearGradient></defs>
+            <rect width="480" height="270" fill="url(#mcV1)"/>
+            <circle cx="380" cy="70" r="60" fill="#ff2e63" opacity=".28"/>
+            <circle cx="110" cy="200" r="80" fill="#00e5ff" opacity=".16"/>
+            <g fill="#0f1520">
+              <rect x="30" y="120" width="42" height="150"/><rect x="86" y="90" width="34" height="180"/>
+              <rect x="130" y="140" width="52" height="130"/><rect x="330" y="110" width="44" height="160"/>
+              <rect x="386" y="150" width="56" height="120"/>
+            </g>
+            <g stroke="#ffc94d" stroke-width="3" opacity=".8"><line x1="0" y1="94" x2="480" y2="94"/><line x1="0" y1="104" x2="480" y2="104" stroke="#ff2e63"/></g>
+            <g fill="#e8ecf5" opacity=".9">
+              <circle cx="212" cy="150" r="9"/><rect x="206" y="160" width="12" height="40" rx="5"/>
+              <circle cx="266" cy="164" r="8"/><rect x="261" y="172" width="10" height="34" rx="5"/>
+            </g>
+            <g stroke="#00e5ff" stroke-width="2" opacity=".7"><path d="M0 226 L60 206 L120 226 L180 200 L240 226 L300 204 L360 226 L420 202 L480 226" fill="none"/></g>
+          </svg>
+          <div class="mc-play"><span>▶</span></div>
+        </div>
+        <div class="mc-vcard-body">
+          <h3>《霓虹下班路》· 用脚步声卡满全片 46 个重拍</h3>
+          <p>把晚高峰的脚步声当鼓点，46 次重拍全部来自真实步行录音，转场只用了硬切与推镜两种。</p>
+          <div class="mc-tagrow"><span class="mc-tag-pink">#城市探索</span><span>#弹力插</span><span>#卡点</span></div>
+          <div class="mc-meta"><span>作者：夜行剪手</span><span>播放 86.5 万</span><span>点赞 6.1 万</span><span>收藏 1.9 万</span></div>
+          <div class="mc-act-row">
+            <button class="mc-act" type="button" data-mc-like="6">♡ 点赞 <b>0</b></button>
+            <button class="mc-act" type="button" data-mc-save="6">☆ 收藏</button>
+            <button class="mc-act" type="button" data-mc-share="6">↗ 分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mc-vcard">
+        <div class="mc-vcard-img">
+          <svg viewBox="0 0 480 270" role="img" aria-label="作品封面：厨房料理过程俯拍与切菜节拍标记">
+            <defs><linearGradient id="mcV2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#161a13"/><stop offset="1" stop-color="#232a1a"/></linearGradient></defs>
+            <rect width="480" height="270" fill="url(#mcV2)"/>
+            <rect x="60" y="48" width="360" height="180" rx="12" fill="#2a3324" stroke="#3d4a30"/>
+            <circle cx="150" cy="130" r="44" fill="#e8ecf5" opacity=".9"/>
+            <circle cx="150" cy="130" r="30" fill="#ffc94d"/>
+            <rect x="220" y="96" width="150" height="14" rx="7" fill="#8f9bb0"/>
+            <rect x="220" y="122" width="110" height="12" rx="6" fill="#5f6a52"/>
+            <rect x="220" y="146" width="132" height="12" rx="6" fill="#5f6a52"/>
+            <g fill="#c8ff3d" opacity=".85">
+              <rect x="236" y="192" width="6" height="20"/><rect x="252" y="182" width="6" height="40"/>
+              <rect x="268" y="192" width="6" height="20"/><rect x="284" y="176" width="6" height="52"/>
+              <rect x="300" y="190" width="6" height="24"/>
+            </g>
+          </svg>
+          <div class="mc-play"><span>▶</span></div>
+        </div>
+        <div class="mc-vcard-body">
+          <h3>《四菜一汤的节拍》· 厨房声音采样实验</h3>
+          <p>菜刀、油锅、水龙头三种声音采样做底，做出一段不靠 BGM 也成立的料理混剪。</p>
+          <div class="mc-tagrow"><span class="mc-tag-pink">#美食烹饪</span><span>#声音设计</span><span>#生活方式</span></div>
+          <div class="mc-meta"><span>作者：锅气研究所</span><span>播放 71.2 万</span><span>点赞 5.4 万</span><span>收藏 2.3 万</span></div>
+          <div class="mc-act-row">
+            <button class="mc-act" type="button" data-mc-like="7">♡ 点赞 <b>0</b></button>
+            <button class="mc-act" type="button" data-mc-save="7">☆ 收藏</button>
+            <button class="mc-act" type="button" data-mc-share="7">↗ 分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mc-vcard">
+        <div class="mc-vcard-img">
+          <svg viewBox="0 0 480 270" role="img" aria-label="作品封面：露营帐篷与星空的延时摄影关键帧">
+            <defs><linearGradient id="mcV3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1424"/><stop offset="1" stop-color="#16243a"/></linearGradient></defs>
+            <rect width="480" height="270" fill="url(#mcV3)"/>
+            <g fill="#e8ecf5" opacity=".85">
+              <circle cx="60" cy="40" r="1.6"/><circle cx="120" cy="66" r="1.4"/><circle cx="200" cy="34" r="1.8"/><circle cx="280" cy="58" r="1.3"/>
+              <circle cx="350" cy="30" r="1.7"/><circle cx="420" cy="70" r="1.5"/><circle cx="160" cy="90" r="1.2"/><circle cx="320" cy="96" r="1.4"/>
+            </g>
+            <path d="M0 190 Q120 160 240 188 T480 176 L480 270 L0 270 Z" fill="#13202f"/>
+            <path d="M170 200 L240 132 L310 200 Z" fill="#ff8a3d" opacity=".85"/>
+            <path d="M240 132 L240 200" stroke="#ffd8b0" stroke-width="2"/>
+            <path d="M226 200 L240 172 L254 200 Z" fill="#0b1424"/>
+            <g stroke="#00e5ff" stroke-width="2" opacity=".7"><path d="M0 230 Q60 214 120 230 T240 224 T360 234 T480 222" fill="none"/></g>
+            <circle cx="392" cy="66" r="18" fill="#c8ff3d" opacity=".7"/>
+          </svg>
+          <div class="mc-play"><span>▶</span></div>
+        </div>
+        <div class="mc-vcard-body">
+          <h3>《凌晨两点的风》· 露营延时与弹力插变速对照</h3>
+          <p>前半段正常速度铺情绪，后半段 0.6 倍放慢再突然回速，用速度差替代转场。</p>
+          <div class="mc-tagrow"><span class="mc-tag-pink">#户外活动</span><span>#治愈影像</span><span>#延时摄影</span></div>
+          <div class="mc-meta"><span>作者：野径相机</span><span>播放 64.8 万</span><span>点赞 4.9 万</span><span>收藏 2.1 万</span></div>
+          <div class="mc-act-row">
+            <button class="mc-act" type="button" data-mc-like="8">♡ 点赞 <b>0</b></button>
+            <button class="mc-act" type="button" data-mc-save="8">☆ 收藏</button>
+            <button class="mc-act" type="button" data-mc-share="8">↗ 分享</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <ul class="mc-vlist" style="margin-top:22px">
+      <li class="mc-vrow">
+        <span class="mc-vrow-idx">05</span>
+        <div>
+          <h3>《旧磁带里的夏天》· 复古胶片色调与低保真采样</h3>
+          <p>用 8 毫米颗粒和磁带噪声做整片基底，弹力插处保留底噪不修，评审称其「有真实的瑕疵感」。</p>
+          <div class="mc-tagrow" style="margin-top:7px"><span class="mc-tag-pink">#艺术美学</span><span>#复古胶片</span><span>#情感故事</span></div>
+        </div>
+        <div class="mc-vrow-side">
+          <span class="mc-dat">播放 58.3 万 · 点赞 4.2 万</span>
+          <button class="mc-act" type="button" data-mc-like="9">♡ 点赞 <b>0</b></button>
+        </div>
+      </li>
+      <li class="mc-vrow">
+        <span class="mc-vrow-idx">06</span>
+        <div>
+          <h3>《给新人的 12 条时间线整理术》· 剪辑流程干货</h3>
+          <p>从素材命名、代理剪辑到音频轨分层，全部演示可复制的项目结构，附工程模板说明。</p>
+          <div class="mc-tagrow" style="margin-top:7px"><span class="mc-tag-pink">#教程干货</span><span>#实用技巧</span><span>#创作幕后</span></div>
+        </div>
+        <div class="mc-vrow-side">
+          <span class="mc-dat">播放 52.7 万 · 点赞 4.6 万</span>
+          <button class="mc-act" type="button" data-mc-like="10">♡ 点赞 <b>0</b></button>
+        </div>
+      </li>
+      <li class="mc-vrow">
+        <span class="mc-vrow-idx">07</span>
+        <div>
+          <h3>《弹力插的三种过门方式》· 技法拆解</h3>
+          <p>硬切、甩镜、遮罩过门逐一对比，每种给出 3 个可复用素材组合，适合首投作者参考。</p>
+          <div class="mc-tagrow" style="margin-top:7px"><span class="mc-tag-pink">#深度测评</span><span>#弹力插</span><span>#知识科普</span></div>
+        </div>
+        <div class="mc-vrow-side">
+          <span class="mc-dat">播放 47.1 万 · 点赞 3.8 万</span>
+          <button class="mc-act" type="button" data-mc-like="11">♡ 点赞 <b>0</b></button>
+        </div>
+      </li>
+      <li class="mc-vrow">
+        <span class="mc-vrow-idx">08</span>
+        <div>
+          <h3>《一只猫的下午四点》· 萌宠日常与手持运镜</h3>
+          <p>全程单手手持，刻意保留轻微抖动，让猫的每一次起跳都落在节拍空档里。</p>
+          <div class="mc-tagrow" style="margin-top:7px"><span class="mc-tag-pink">#萌宠日常</span><span>#日常记录</span><span>#治愈影像</span></div>
+        </div>
+        <div class="mc-vrow-side">
+          <span class="mc-dat">播放 43.6 万 · 点赞 3.5 万</span>
+          <button class="mc-act" type="button" data-mc-like="12">♡ 点赞 <b>0</b></button>
+        </div>
+      </li>
+      <li class="mc-vrow">
+        <span class="mc-vrow-idx">09</span>
+        <div>
+          <h3>《棚拍现场：一条混剪是怎样被改出来的》</h3>
+          <p>完整记录从初稿到终稿的四次修改，包括被评审退回的两处卡点错位。</p>
+          <div class="mc-tagrow" style="margin-top:7px"><span class="mc-tag-pink">#创作幕后</span><span>#人物访谈</span><span>#行业观察</span></div>
+        </div>
+        <div class="mc-vrow-side">
+          <span class="mc-dat">播放 39.4 万 · 点赞 3.1 万</span>
+          <button class="mc-act" type="button" data-mc-like="13">♡ 点赞 <b>0</b></button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== S4 专题企划 ===== -->
+<section class="mc-sec" id="mc-topics" aria-labelledby="mc-topics-title">
+  <div class="mc-wrap">
+    <div class="mc-sec-head">
+      <div>
+        <p class="mc-sec-kicker">SERIES · 专题企划</p>
+        <h2 id="mc-topics-title">长期专题<span>与企划单元</span></h2>
+        <p class="mc-sec-desc">每日大赛之外，我们以专题为单位做更慢、更深的内容积累，每个专题由固定评审与创作者共同维护，更新状态全部公开。</p>
+        <div class="mc-h2-line"></div>
+      </div>
+    </div>
+    <div class="mc-topic-grid">
+      <article class="mc-topic">
+        <div class="mc-topic-img">
+          <svg viewBox="0 0 480 210" role="img" aria-label="专题配图：弹力插节奏教学的分层音轨示意">
+            <rect width="480" height="210" fill="#131a26"/>
+            <g stroke="#2a3040"><line x1="0" y1="52" x2="480" y2="52"/><line x1="0" y1="104" x2="480" y2="104"/><line x1="0" y1="156" x2="480" y2="156"/></g>
+            <g fill="#ff2e63"><rect x="24" y="30" width="70" height="16" rx="6"/><rect x="110" y="30" width="120" height="16" rx="6"/><rect x="246" y="30" width="90" height="16" rx="6"/><rect x="352" y="30" width="100" height="16" rx="6"/></g>
+            <g fill="#00e5ff" opacity=".85"><rect x="24" y="82" width="150" height="16" rx="6"/><rect x="190" y="82" width="60" height="16" rx="6"/><rect x="266" y="82" width="70" height="16" rx="6"/><rect x="352" y="82" width="100" height="16" rx="6"/></g>
+            <g fill="#c8ff3d" opacity=".8"><rect x="24" y="134" width="100" height="16" rx="6"/><rect x="140" y="134" width="150" height="16" rx="6"/><rect x="306" y="134" width="60" height="16" rx="6"/><rect x="382" y="134" width="70" height="16" rx="6"/></g>
+            <g stroke="#ffc94d" stroke-width="2" stroke-dasharray="4 4"><line x1="94" y1="14" x2="94" y2="196"/><line x1="246" y1="14" x2="246" y2="196"/><line x1="352" y1="14" x2="352" y2="196"/></g>
+          </svg>
+        </div>
+        <div class="mc-topic-top">
+          <h3>「弹力插拆解室」</h3>
+          <span class="mc-status mc-status-on">更新中 · 第 9 期</span>
+        </div>
+        <p>把每期获奖作品拆到帧级别，讲清楚为什么这样切、为什么这里留白。</p>
+        <ul>
+          <li>《为什么 17 秒的那一刀不能提前》</li>
+          <li>《同一段素材，四种节拍落法对比》</li>
+          <li>《留白比卡点更难：情绪段的处理》</li>
+        </ul>
+      </article>
+      <article class="mc-topic">
+        <div class="mc-topic-top">
+          <h3>「城市声音地图」</h3>
+          <span class="mc-status mc-soon">招募中</span>
+        </div>
+        <p>面向所有在册创作者的城市音频采集企划，采集素材将进入官方正版素材库，供每日大赛使用。</p>
+        <ul>
+          <li>已收录 27 座城市的交通与市集采样</li>
+          <li>参与者可获得素材库优先使用权限</li>
+          <li>优秀采样会在评审直播中现场拆解</li>
+        </ul>
+      </article>
+      <article class="mc-topic">
+        <div class="mc-topic-top">
+          <h3>「新人首投计划」</h3>
+          <span class="mc-status mc-status-on">长期开放</span>
+        </div>
+        <p>给第一次投稿的作者一个不撞车的位置：独立评分池、独立榜单，并有老作者一对一点评。</p>
+        <ul>
+          <li>首投作品单独评审，不与老手同池竞争</li>
+          <li>每周选 3 位新人进入「潜力推荐位」</li>
+          <li>提供工程模板与素材包下载说明</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S5 创作者矩阵 ===== -->
+<section class="mc-sec" id="mc-authors" aria-labelledby="mc-authors-title">
+  <div class="mc-wrap">
+    <div class="mc-sec-head">
+      <div>
+        <p class="mc-sec-kicker">CREATORS · 创作者矩阵</p>
+        <h2 id="mc-authors-title">在册创作者<span>与评审</span></h2>
+        <p class="mc-sec-desc">平台坚持「创作者优先」的社区治理原则，以下为长期活跃的在册作者与常驻评审，档案信息由本人确认后展示。</p>
+        <div class="mc-h2-line"></div>
+      </div>
+      <button class="mc-btn mc-btn-ghost" type="button" data-mc-author="插帧老唐">查看评审档案</button>
+    </div>
+    <div class="mc-author-grid">
+      <article class="mc-author">
+        <div class="mc-avatar" style="background:linear-gradient(135deg,#ff2e63,#ff9a3d)">唐</div>
+        <div>
+          <h3>插帧老唐 <small>常驻评审</small></h3>
+          <p class="mc-arole">擅长领域：弹力插节奏结构 · 城市影像</p>
+          <p>职业广告剪辑师，入行九年，做过汽车、饮料与运动品牌短片。他的评审标准只有一条：先问这一刀有没有存在的理由，再谈炫不炫。日常在社区更新「拆解室」专栏，喜欢把复杂节奏讲成普通人能听懂的话。</p>
+          <div class="mc-author-fig"><span>作品 <b>214</b></span><span>粉丝 <b>18.6 万</b></span><span>获赞 <b>326 万</b></span></div>
+          <button class="mc-act mc-author-btn" type="button" data-mc-author="插帧老唐">查看详情</button>
+        </div>
+      </article>
+      <article class="mc-author">
+        <div class="mc-avatar" style="background:linear-gradient(135deg,#00e5ff,#0077ff)">夜</div>
+        <div>
+          <h3>夜行剪手 <small>签约创作者</small></h3>
+          <p class="mc-arole">擅长领域：夜间城市探索 · 环境音采样</p>
+          <p>白天上班，夜里带着录音笔和相机在城市里走。习惯先把声音采回来再决定画面怎么剪，所以作品里的脚步声、卷帘门声都是真实录到的。他说自己不是在拍城市，是在收集城市的呼吸，然后把它排成节拍。</p>
+          <div class="mc-author-fig"><span>作品 <b>96</b></span><span>粉丝 <b>9.2 万</b></span><span>获赞 <b>131 万</b></span></div>
+          <button class="mc-act mc-author-btn" type="button" data-mc-author="夜行剪手">查看详情</button>
+        </div>
+      </article>
+      <article class="mc-author">
+        <div class="mc-avatar" style="background:linear-gradient(135deg,#c8ff3d,#3ec96b)">锅</div>
+        <div>
+          <h3>锅气研究所 <small>垂直领域作者</small></h3>
+          <p class="mc-arole">擅长领域：料理声音设计 · 美食影像</p>
+          <p>一个由两位厨师和一位剪辑师组成的小团队，专注把厨房里的声音做成节奏。他们认为最好的美食片子不该只有香气，还应该有锅铲碰锅的那一下脆响，所以每条作品都会单独录一条声音轨。</p>
+          <div class="mc-author-fig"><span>作品 <b>73</b></span><span>粉丝 <b>7.8 万</b></span><span>获赞 <b>98 万</b></span></div>
+          <button class="mc-act mc-author-btn" type="button" data-mc-author="锅气研究所">查看详情</button>
+        </div>
+      </article>
+      <article class="mc-author">
+        <div class="mc-avatar" style="background:linear-gradient(135deg,#ff9a3d,#ff2e63)">野</div>
+        <div>
+          <h3>野径相机 <small>户外影像作者</small></h3>
+          <p class="mc-arole">擅长领域：户外活动 · 延时摄影</p>
+          <p>常年在山野之间，拍露营、徒步和凌晨的风。作品节奏普遍偏慢，但每次变速都踩得很准。他相信记录比创作更重要，所以很少加特效，宁愿多等两个小时等一场云散开，也不愿用软件补一个假的天空。</p>
+          <div class="mc-author-fig"><span>作品 <b>58</b></span><span>粉丝 <b>6.4 万</b></span><span>获赞 <b>82 万</b></span></div>
+          <button class="mc-act mc-author-btn" type="button" data-mc-author="野径相机">查看详情</button>
+        </div>
+      </article>
+      <article class="mc-author">
+        <div class="mc-avatar" style="background:linear-gradient(135deg,#8b2bff,#00e5ff)">磁</div>
+        <div>
+          <h3>磁带少年 <small>新人推荐位</small></h3>
+          <p class="mc-arole">擅长领域：复古胶片 · 低保真采样</p>
+          <p>刚满二十岁，用一台旧相机和二手磁带机做片子。风格明显不成熟，但情绪很真，被评审称为「有瑕疵感的新人」。他在社区里记录自己每一次被退回的稿子，也把修改过程全部公开给其他新人参考。</p>
+          <div class="mc-author-fig"><span>作品 <b>21</b></span><span>粉丝 <b>2.3 万</b></span><span>获赞 <b>19 万</b></span></div>
+          <button class="mc-act mc-author-btn" type="button" data-mc-author="磁带少年">查看详情</button>
+        </div>
+      </article>
+      <article class="mc-author">
+        <div class="mc-avatar" style="background:linear-gradient(135deg,#3ec96b,#c8ff3d)">林</div>
+        <div>
+          <h3>林间编导 <small>常驻评审</small></h3>
+          <p class="mc-arole">擅长领域：叙事结构 · 人物访谈</p>
+          <p>纪录片编导出身的评审，看混剪也看故事。她常提醒作者：节拍是骨架，情绪才是血肉，一条片子如果只有卡点没有情绪，观众记住的只是音乐。她在社区主持「人物访谈」专题，采访过十余位普通创作者。</p>
+          <div class="mc-author-fig"><span>作品 <b>45</b></span><span>粉丝 <b>5.1 万</b></span><span>获赞 <b>64 万</b></span></div>
+          <button class="mc-act mc-author-btn" type="button" data-mc-author="林间编导">查看详情</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S6 数据榜单 ===== -->
+<section class="mc-sec" id="mc-board" aria-labelledby="mc-board-title">
+  <div class="mc-wrap">
+    <div class="mc-sec-head">
+      <div>
+        <p class="mc-sec-kicker">RANKING · 公开榜单</p>
+        <h2 id="mc-board-title">热度榜 · 新人榜 · 口碑榜</h2>
+        <p class="mc-sec-desc">榜单每日 20:00 结算，数据口径公开：热度 = 播放 × 完播系数 + 互动加权；口碑 = 评审评分 × 0.7 + 社区评分 × 0.3。</p>
+        <div class="mc-h2-line"></div>
+      </div>
+    </div>
+    <div class="mc-board">
+      <div class="mc-board-col">
+        <h3><i></i>今日热度榜</h3>
+        <ul>
+          <li><b>1</b><span>霓虹下班路</span><em>98.6</em></li>
+          <li><b>2</b><span>四菜一汤的节拍</span><em>96.2</em></li>
+          <li><b>3</b><span>凌晨两点的风</span><em>94.7</em></li>
+          <li><b>4</b><span>八分音符呼吸</span><em>93.1</em></li>
+          <li><b>5</b><span>旧磁带里的夏天</span><em>91.5</em></li>
+          <li><b>6</b><span>一只猫的下午四点</span><em>89.8</em></li>
+        </ul>
+      </div>
+      <div class="mc-board-col">
+        <h3><i></i>新人潜力榜</h3>
+        <ul>
+          <li><b>1</b><span>磁带少年</span><em>88.4</em></li>
+          <li><b>2</b><span>剪片的小周</span><em>86.9</em></li>
+          <li><b>3</b><span>阿冗的硬盘</span><em>85.3</em></li>
+          <li><b>4</b><span>半格胶片社</span><em>84.6</em></li>
+          <li><b>5</b><span>早八剪辑员</span><em>83.2</em></li>
+          <li><b>6</b><span>三分熟工作室</span><em>82.7</em></li>
+        </ul>
+      </div>
+      <div class="mc-board-col">
+        <h3><i></i>社区口碑榜</h3>
+        <ul>
+          <li><b>1</b><span>给新人的 12 条整理术</span><em>9.6</em></li>
+          <li><b>2</b><span>弹力插的三种过门</span><em>9.4</em></li>
+          <li><b>3</b><span>棚拍现场全记录</span><em>9.2</em></li>
+          <li><b>4</b><span>城市声音地图·预告</span><em>9.0</em></li>
+          <li><b>5</b><span>为什么这一刀不能提前</span><em>8.9</em></li>
+          <li><b>6</b><span>新人首投复盘</span><em>8.7</em></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S4/S15 品牌故事 + 关键词解析（800字以上） ===== -->
+<section class="mc-sec" id="mc-story" aria-labelledby="mc-story-title">
+  <div class="mc-wrap">
+    <div class="mc-sec-head">
+      <div>
+        <p class="mc-sec-kicker">BRAND · 品牌故事与深度解析</p>
+        <h2 id="mc-story-title">它为什么值得被每天剪一次<span>· 关键词解析</span></h2>
+        <p class="mc-sec-desc">「抖音风弹力插混剪每日大赛」不只是一个赛题名，它描述的是一整套关于节奏、素材与社区协作的方法论。</p>
+        <div class="mc-h2-line"></div>
+      </div>
+    </div>
+    <div class="mc-story">
+      <div class="mc-story-art">
+        <svg viewBox="0 0 480 600" role="img" aria-label="品牌主视觉：竖屏混剪作品墙与评审流程时间线插画">
+          <defs>
+            <linearGradient id="mcSt1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171d2b"/><stop offset="1" stop-color="#0c1119"/></linearGradient>
+            <linearGradient id="mcSt2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff2e63"/><stop offset="1" stop-color="#c8ff3d"/></linearGradient>
+          </defs>
+          <rect width="480" height="600" fill="url(#mcSt1)"/>
+          <g>
+            <rect x="34" y="40" width="130" height="200" rx="14" fill="#20283a" stroke="#2f3850"/>
+            <rect x="48" y="56" width="102" height="120" rx="8" fill="#ff2e63" opacity=".55"/>
+            <circle cx="99" cy="116" r="18" fill="#fff" opacity=".85"/>
+            <path d="M94 107 L110 116 L94 125 Z" fill="#ff2e63"/>
+            <rect x="48" y="188" width="80" height="8" rx="4" fill="#3a4460"/>
+            <rect x="48" y="204" width="56" height="7" rx="3.5" fill="#2c3446"/>
+          </g>
+          <g>
+            <rect x="176" y="70" width="130" height="200" rx="14" fill="#20283a" stroke="#2f3850"/>
+            <rect x="190" y="86" width="102" height="120" rx="8" fill="#00e5ff" opacity=".45"/>
+            <g stroke="#fff" stroke-width="2" opacity=".8"><path d="M196 176 L224 132 L252 172 L280 140" fill="none"/></g>
+            <rect x="190" y="218" width="86" height="8" rx="4" fill="#3a4460"/>
+            <rect x="190" y="234" width="62" height="7" rx="3.5" fill="#2c3446"/>
+          </g>
+          <g>
+            <rect x="318" y="40" width="130" height="200" rx="14" fill="#20283a" stroke="#2f3850"/>
+            <rect x="332" y="56" width="102" height="120" rx="8" fill="#c8ff3d" opacity=".38"/>
+            <g fill="#fff" opacity=".8"><rect x="344" y="150" width="6" height="20"/><rect x="358" y="136" width="6" height="34"/><rect x="372" y="146" width="6" height="24"/><rect x="386" y="128" width="6" height="42"/><rect x="400" y="148" width="6" height="22"/></g>
+            <rect x="332" y="188" width="74" height="8" rx="4" fill="#3a4460"/>
+            <rect x="332" y="204" width="50" height="7" rx="3.5" fill="#2c3446"/>
+          </g>
+          <rect x="34" y="272" width="414" height="1" fill="#2a3040"/>
+          <g font-family="sans-serif">
+            <circle cx="52" cy="316" r="9" fill="#ff2e63"/>
+            <rect x="74" y="308" width="150" height="10" rx="5" fill="#3a4460"/>
+            <rect x="74" y="326" width="220" height="7" rx="3.5" fill="#252c3c"/>
+            <circle cx="52" cy="376" r="9" fill="#00e5ff"/>
+            <rect x="74" y="368" width="190" height="10" rx="5" fill="#3a4460"/>
+            <rect x="74" y="386" width="180" height="7" rx="3.5" fill="#252c3c"/>
+            <circle cx="52" cy="436" r="9" fill="#c8ff3d"/>
+            <rect x="74" y="428" width="130" height="10" rx="5" fill="#3a4460"/>
+            <rect x="74" y="446" width="240" height="7" rx="3.5" fill="#252c3c"/>
+          </g>
+          <line x1="52" y1="316" x2="52" y2="436" stroke="#2a3040" stroke-width="2"/>
+          <rect x="34" y="486" width="414" height="82" rx="12" fill="#141a26" stroke="url(#mcSt2)"/>
+          <text x="56" y="518" font-size="14" fill="#e8ecf5" font-family="sans-serif">每日 20:00 结算 · 评审公开 · 数据可查</text>
+          <text x="56" y="544" font-size="12" fill="#9aa5bb" font-family="sans-serif">官方正版素材库 · 高清交付 · 持续运营</text>
+        </svg>
+      </div>
+      <div class="mc-prose">
+        <h3><i>01</i>关键词拆解：什么叫「抖音风」</h3>
+        <p>所谓「抖音风」，在本站并不是指某个平台的分发规则，而是指一套已经被大量作品验证过的竖屏叙事习惯：前三秒必须给出钩子，中段用密集的信息交换维持注意力，结尾留一个可被反复观看的回环。作为深耕这一垂直领域的品牌，我们在评审时会把这条习惯拆成可量化的指标——首帧信息量、镜头平均时长、变速次数、音画错位容忍度。很多新人误以为「抖」就是快，其实真正难的是控制快慢之间的比例。我们的官方评审记录里，被打回最多的一类问题不是剪辑不够炫，而是前八秒塞进了太多信息，导致观众还没建立情绪锚点就被推着走。<strong>专业</strong>的混剪从来不是素材堆叠，而是有意识地安排观众在什么时刻该放松、什么时刻该紧张。</p>
+        <h3><i>02</i>关键词拆解：什么叫「弹力插」</h3>
+        <p>「弹力插」指的是画面在节拍点上产生一次轻微的弹性伸缩或位移，视觉上像被鼓点弹了一下。它和普通的缩放卡点区别在于「回弹」：动作不能停在最大幅度，而要有一个被音浪推回来又弹出去的过程。这个细节决定了片子是有呼吸的还是有抽筋感。我们把这个动作拆成三段——蓄力、释放、回收，并给出各自的时长参考区间。在每日大赛的投稿里，约六成作品会使用弹力插，但真正把回收段做完整的不到三成，这也是拉开评分差距的关键位置。评审组在官方发布里反复强调：宁可少用十次弹力插，也不要在同一秒内叠两次不同方向的位移，那会让观众产生生理上的不适。这条经验来自上千份投稿的共性问题统计，也是我们作为<strong>值得信赖</strong>的赛事平台愿意公开的内容资产。</p>
+        <h3><i>03</i>关键词拆解：什么叫「混剪」与「每日大赛」</h3>
+        <p>混剪的核心不是「剪」，而是「重排」。同一批素材，换一个顺序、换一个节拍落点，叙事的重心就完全变了。我们鼓励作者在投稿时附上素材来源与处理思路，一方面是对<strong>原创</strong>与<strong>正版</strong>的尊重，另一方面也让作品具有可复现的教学价值。至于「每日大赛」，它意味着赛题每天更新、评审每天进行、榜单每天结算。这种高频节奏会带来压力，但也正因为每天都在比，创作者才能形成稳定的手感，而不是一年只准备一次大稿。平台为此设计了独立的新人评分池、公开的评审意见与可回看的拆解直播，让<strong>陪伴</strong>不只是一个口号，而是每天二十点准时出现的那条结算通知。</p>
+        <h3><i>04</i>从一条片子到一个社区：内容生态怎么长出来</h3>
+        <p>我们始终认为，一个视频品牌的<strong>影响力</strong>不来自单条爆款，而来自持续运营的内容生态。每天新增的投稿会沉淀为三层资产：第一层是可复用的正版素材与声音采样，进入官方素材库；第二层是可检索的评审意见，构成社区共享的知识库；第三层是创作者之间的关系，许多作者通过「新人首投计划」找到长期合作伙伴。这三层叠加起来，才让一个小小的赛题具备<strong>成长</strong>的可能。我们也在做一件看起来很慢的事——给每条被退回的稿子留档，并邀请作者自己写复盘。这些文字往往比获奖作品更打动人，因为它们记录了<strong>真实</strong>的笨拙与<strong>温暖</strong>的坚持。作为一个以<strong>用户至上</strong>为原则的企业，我们相信<strong>品质</strong>与<strong>口碑</strong>是靠这些看不见的积累换来的，而不是靠一次性的流量投放。</p>
+        <div class="mc-quote">
+          「节拍是骨架，情绪才是血肉。一条片子如果只有卡点没有情绪，观众记住的只是音乐，不是你的作品。」
+          <cite>—— 常驻评审 林间编导，摘自第 96 期评审手记</cite>
+        </div>
+        <h3><i>05</i>关于公平与透明的公开承诺</h3>
+        <p>每日大赛的全部评分均由至少三位评审独立打分后取中位数，评分维度、权重与申诉流程在帮助中心完整公示。任何作者都可以在结算后的四十八小时内查看自己的分项得分与评审意见，并可提交一次复核申请。这是我们对<strong>行业领先</strong>这一自我要求的具体落地，也是对每一位把作品交到我们手上的创作者的尊重。平台同时承担对应的<strong>社会责任</strong>：所有入选作品必须使用可商用素材，涉及他人肖像与音乐版权的内容需提供授权说明，违规作品一律下架并公示处理结果。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S7 辅助区：企业动态 + 合作品牌 / 投稿 ===== -->
+<section class="mc-sec" id="mc-signup" aria-labelledby="mc-aux-title">
+  <div class="mc-wrap">
+    <div class="mc-sec-head">
+      <div>
+        <p class="mc-sec-kicker">UPDATES · 动态与入口</p>
+        <h2 id="mc-aux-title">企业动态<span>与参与方式</span></h2>
+        <p class="mc-sec-desc">官方发布的赛程调整、规则更新与合作信息都会在这里集中公示，同时开放报名、投稿与素材下载入口。</p>
+        <div class="mc-h2-line"></div>
+      </div>
+      <button class="mc-btn mc-btn-pink" type="button" data-mc-submit="1">投稿 / 报名</button>
+    </div>
+    <div class="mc-aux">
+      <div class="mc-panel">
+        <h3><i></i>企业动态与内容更新</h3>
+        <ul class="mc-news">
+          <li><time>11-22</time><p>第 128 期赛题「八分音符卡点·弹力插混剪」上线，新增新人首投加成赛道。</p></li>
+          <li><time>11-20</time><p>官方正版素材库更新第十二批城市环境音采样，共 186 条，全部标注可商用范围。</p></li>
+          <li><time>11-18</time><p>评审团新增两位常驻评审，评审手记同步公开至社区知识库。</p></li>
+          <li><time>11-15</time><p>「城市声音地图」专题企划开启招募，参与者可提交采样作品参与主题投票。</p></li>
+          <li><time>11-12</time><p>投稿规则调整：审核周期由 48 小时缩短至 24 小时，复核窗口保持不变。</p></li>
+        </ul>
+      </div>
+      <div class="mc-panel">
+        <h3><i></i>合作品牌与伙伴</h3>
+        <div class="mc-partners">
+          <div class="mc-partner"><i style="background:#ff2e63">素</i>正版素材库</div>
+          <div class="mc-partner"><i style="background:#00e5ff">声</i>声音采样联盟</div>
+          <div class="mc-partner"><i style="background:#c8ff3d">帧</i>帧率实验室</div>
+          <div class="mc-partner"><i style="background:#ff9a3d">校</i>创客影像学院</div>
+        </div>
+        <h3 style="margin-top:22px"><i></i>创作灵感与工具</h3>
+        <p style="font-size:13px;color:#b8c2d4">脚本灵感、标题建议与剪辑思路每周更新。当前推荐：把一段 8 秒的环境音切成 4 个 2 秒片段，再用变速把第 3 段拉长到 3 秒，你会得到一种「被拉住又放开」的节奏。更多思路可在社区话题页查看，也可以直接上传你的草稿参与创意投票。</p>
+        <div class="mc-act-row">
+          <button class="mc-act" type="button" data-mc-share="0">↗ 复制赛事链接</button>
+          <button class="mc-act" type="button" data-mc-submit="2">下载素材包说明</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S6 社区评价 ===== -->
+<section class="mc-sec" id="mc-comments" aria-labelledby="mc-comments-title">
+  <div class="mc-wrap">
+    <div class="mc-sec-head">
+      <div>
+        <p class="mc-sec-kicker">VOICES · 社区口碑</p>
+        <h2 id="mc-comments-title">创作者怎么说</h2>
+        <p class="mc-sec-desc">以下评价来自社区公开留言，未做修饰，保留原始语气与长短差异。</p>
+        <div class="mc-h2-line"></div>
+      </div>
+    </div>
+    <div class="mc-cmt-grid">
+      <div class="mc-cmt">
+        <div class="mc-cmt-top"><span class="mc-cmt-ava" style="background:#ff2e63">周</span><strong>剪片的小周</strong><span>11-21</span></div>
+        <p>第一次投稿就被评审写了整整三段意见，虽然没进榜，但那几句比我自己复盘一个月都管用。第二天改完重投，进了新人潜力榜第七。</p>
+        <div class="mc-stars">★★★★★</div>
+      </div>
+      <div class="mc-cmt">
+        <div class="mc-cmt-top"><span class="mc-cmt-ava" style="background:#00e5ff">阿</span><strong>阿冗的硬盘</strong><span>11-20</span></div>
+        <p>素材库真的能救命。以前找环境音要找一晚上，现在直接按城市和场景筛，还标注了可商用范围，省下来的时间都用来调节奏了。</p>
+        <div class="mc-stars">★★★★★</div>
+      </div>
+      <div class="mc-cmt">
+        <div class="mc-cmt-top"><span class="mc-cmt-ava" style="background:#c8ff3d">半</span><strong>半格胶片社</strong><span>11-19</span></div>
+        <p>唯一的建议是希望赛题提前一天公布，我们这种白天上班晚上剪的人，二十点出题当天基本赶不及。其他都挺好。</p>
+        <div class="mc-stars">★★★★☆</div>
+      </div>
+      <div class="mc-cmt">
+        <div class="mc-cmt-top"><span class="mc-cmt-ava" style="background:#ff9a3d">早</span><strong>早八剪辑员</strong><span>11-18</span></div>
+        <p>看了「弹力插的三种过门方式」才明白自己以前为什么总卡不准，原来问题出在回收段太短。改完之后完播率肉眼可见地涨了。</p>
+        <div class="mc-stars">★★★★★</div>
+      </div>
+      <div class="mc-cmt">
+        <div class="mc-cmt-top"><span class="mc-cmt-ava" style="background:#8b2bff">三</span><strong>三分熟工作室</strong><span>11-17</span></div>
+        <p>透明，是我留在这里最主要的原因。分项得分、评审意见、复核结果都能查，这种底气不是每个平台都有的。</p>
+        <div class="mc-stars">★★★★★</div>
+      </div>
+      <div class="mc-cmt">
+        <div class="mc-cmt-top"><span class="mc-cmt-ava" style="background:#3ec96b">林</span><strong>林间散步者</strong><span>11-16</span></div>
+        <p>我不太会剪片子，就是爱看。每天二十点等结算通知已经成习惯了，比追剧有意思，因为知道屏幕后面是真实的人在做真实的东西。</p>
+        <div class="mc-stars">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== S7 FAQ ===== -->
+<section class="mc-sec" id="mc-faq" aria-labelledby="mc-faq-title" style="border-bottom:none">
+  <div class="mc-wrap">
+    <div class="mc-sec-head">
+      <div>
+        <p class="mc-sec-kicker">HELP · 帮助中心</p>
+        <h2 id="mc-faq-title">常见问题<span>· 官方解答</span></h2>
+        <p class="mc-sec-desc">关于报名、投稿、评审与素材授权的高频问题，均以本页最新版本为准。</p>
+        <div class="mc-h2-line"></div>
+      </div>
+    </div>
+    <div class="mc-faq">
+      <details open>
+        <summary>每日大赛每天几点截止投稿？审核要多久？</summary>
+        <p>赛题于每日 10:00 在公告条与赛题页同步发布，投稿截止时间为当日 20:00。为保证结算准时，20:00 后提交的作品自动进入次日评审池。审核周期已由 48 小时缩短至 24 小时，涉及版权说明不全的作品会退回补充材料，补充后重新排队。</p>
+      </details>
+      <details>
+        <summary>「弹力插」有官方统一的技法标准吗？</summary>
+        <p>我们不设强制标准，但评审组会在拆解室中给出参考区间：蓄力段约 2 至 4 帧，释放段约 3 至 6 帧，回收段建议不少于 4 帧。回收段是否完整，是分项得分中最常被扣分的位置。作者可自由发挥，只要视觉逻辑自洽即可。</p>
+      </details>
+      <details>
+        <summary>使用的素材必须来自官方素材库吗？</summary>
+        <p>不强制。作者可以使用自有拍摄素材或其他可商用素材，但需在投稿时填写来源说明。使用官方素材库中的正版素材可获得额外的合规加分，并简化审核流程。涉及第三方音乐时，需提供授权或使用平台提供的可商用曲库。</p>
+      </details>
+      <details>
+        <summary>新人首投计划怎么参加？需要额外报名吗？</summary>
+        <p>无需额外报名。账号完成首次投稿即自动进入新人评分池，与老作者分开评审，独立结算独立榜单。每位作者的首次投稿都会收到至少一份书面评审意见。如首投未通过审核，修正后可再次计入新人池，机会保留至第三次投稿为止。</p>
+      </details>
+      <details>
+        <summary>评分是否可以申诉？流程是怎样的？</summary>
+        <p>可以。结算后 48 小时内，作者可在作品详情页提交一次复核申请，需说明具体质疑的分项。复核由未参与原评审的评审执行，结果与原评分不一致时会公示原因。复核结果为最终结果，同一作品不接受二次申请。</p>
+      </details>
+      <details>
+        <summary>作品入选后会被用于商业宣传吗？</summary>
+        <p>不会未经授权使用。入选作品的展示范围限于站内榜单、拆解室教学与官方发布的赛事回顾，均会标注作者信息。如需用于商业合作，我们会单独联系作者并签署授权协议，作者有权拒绝且不影响既有榜单成绩。</p>
+      </details>
+      <details>
+        <summary>平台支持哪些交付规格？高清标准是什么？</summary>
+        <p>建议投稿规格为竖屏 1080×1920、帧率 30 或 60、码率不低于 12Mbps，音频采样 48kHz。平台接受横屏作品，但会在评审中单独说明画幅适配情况。所有上架展示的作品均以高清版本呈现，不进行二次压缩降质处理。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== S8 页脚 ===== -->
+<footer class="mc-footer">
+  <div class="mc-wrap">
+    <div class="mc-foot-top">
+      <div class="mc-foot-brand">
+        <a class="mc-brand" href="#mc-top">
+          <span class="mc-brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5 L19 12 L8 18.5 Z" fill="#fff"/><rect x="3" y="5" width="2" height="14" rx="1" fill="#fff" opacity=".8"/></svg>
+          </span>
+          <span class="mc-brand-txt"><strong>抖音风弹力插混剪每日大赛</strong><span>DAILY MIX CUT ARENA</span></span>
+        </a>
+        <p>抖音风弹力插混剪每日大赛官方网站｜以每日赛题驱动原创混剪创作，搭建专业、透明、可持续运营的垂直内容生态，服务创作者与企业伙伴。本站为品牌官方网站，持续运营中。</p>
+      </div>
+      <div class="mc-foot-col">
+        <h4>赛事</h4>
+        <ul>
+          <li>今日赛题</li><li>报名通道</li><li>榜单公示</li><li>评审手记</li>
+        </ul>
+      </div>
+      <div class="mc-foot-col">
+        <h4>社区</h4>
+        <ul>
+          <li>创作者名录</li><li>新人首投计划</li><li>专题企划</li><li>创作灵感</li>
+        </ul>
+      </div>
+      <div class="mc-foot-col">
+        <h4>关于</h4>
+        <ul>
+          <li>品牌故事</li><li>企业动态</li><li>合作与授权</li><li>帮助中心</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mc-foot-bottom">
+      <span>© 2026 抖音风弹力插混剪每日大赛 官方网站 · 版权所有 · 持续运营中</span>
+      <span>备案号：京ICP备00000000号-1 · 正版素材授权公示 · 用户至上 · 品质为先</span>
+    </div>
+  </div>
+</footer>
+
+<button class="mc-top" id="mc-top-btn" type="button" aria-label="回到顶部">↑</button>
+<div class="mc-toast" id="mc-toast" role="status" aria-live="polite"></div>
+
+<div class="mc-modal" id="mc-modal" role="dialog" aria-modal="true" aria-labelledby="mc-modal-title">
+  <div class="mc-modal-box">
+    <h3 id="mc-modal-title">投稿 / 报名</h3>
+    <p class="mc-modal-sub">填写基本信息后，我们会在 24 小时内通过站内消息回复。本表单为前端演示，不会真实提交。</p>
+    <label for="mc-f-name">创作者昵称</label>
+    <input id="mc-f-name" type="text" placeholder="请输入昵称">
+    <label for="mc-f-work">作品标题</label>
+    <input id="mc-f-work" type="text" placeholder="例如：八分音符呼吸">
+    <label for="mc-f-track">参赛赛道</label>
+    <select id="mc-f-track">
+      <option>每日赛题 · 弹力插混剪</option>
+      <option>新人首投加成赛道</option>
+      <option>专题企划 · 城市声音地图</option>
+    </select>
+    <label for="mc-f-note">补充说明</label>
+    <textarea id="mc-f-note" placeholder="素材来源、时长、是否使用官方素材库等"></textarea>
+    <div class="mc-modal-actions">
+      <button class="mc-btn mc-btn-ghost" type="button" id="mc-modal-cancel">取消</button>
+      <button class="mc-btn mc-btn-pink" type="button" id="mc-modal-ok">提交</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var $ = function(s,el){return (el||document).querySelector(s);};
+  var $$ = function(s,el){return Array.prototype.slice.call((el||document).querySelectorAll(s));};
+
+  /* ---- Toast ---- */
+  var toastEl = $("#mc-toast"), toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("mc-on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("mc-on"); }, 2200);
+  }
+
+  /* ---- 移动端导航折叠 ---- */
+  var burger = $("#mc-burger"), nav = $("#mc-nav");
+  burger.addEventListener("click", function(){
+    var open = nav.classList.toggle("mc-open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+    burger.textContent = open ? "✕" : "☰";
+  });
+  $$("a", nav).forEach(function(a){
+    a.addEventListener("click", function(){
+      nav.classList.remove("mc-open");
+      burger.setAttribute("aria-expanded","false");
+      burger.textContent = "☰";
+    });
+  });
+
+  /* ---- 搜索：输入提示 + 反馈 ---- */
+  var searchInput = $("#mc-search-input"),
+      searchTip = $("#mc-search-tip"),
+      searchBtn = $("#mc-search-btn");
+  var searchPool = [
+    "弹力插混剪 新手教学","八分音符卡点 赛题","插帧老唐 拆解室",
+    "夜行剪手 城市声音","新人首投计划 报名","正版素材库 环境音",
+    "口碑榜 教程干货","弹力插 三种过门","每日大赛 投稿规则","评审手记"
+  ];
+  function renderTip(kw){
+    var key = (kw||"").trim();
+    var list = key ? searchPool.filter(function(x){return x.indexOf(key) > -1;}) : searchPool.slice(0,6);
+    if(!list.length){ searchTip.innerHTML = '<li>没有匹配结果，试试「弹力插」或「新人首投」</li>'; searchTip.classList.add("mc-on"); return; }
+    searchTip.innerHTML = list.map(function(x){return '<li>⌕ '+x+'</li>';}).join("");
+    searchTip.classList.add("mc-on");
+  }
+  searchInput.addEventListener("input", function(){ renderTip(this.value); });
+  searchInput.addEventListener("focus", function(){ renderTip(this.value); });
+  searchTip.addEventListener("click", function(e){
+    var li = e.target.closest("li");
+    if(!li) return;
+    searchInput.value = li.textContent.replace("⌕ ","");
+    searchTip.classList.remove("mc-on");
+    toast("已为你定位相关内容：" + searchInput.value);
+    var target = document.getElementById("mc-videos");
+    if(target) target.scrollIntoView({behavior:"smooth"});
+  });
+  document.addEventListener("click", function(e){
+    if(!e.target.closest(".mc-search")) searchTip.classList.remove("mc-on");
+  });
+  searchBtn.addEventListener("click", function(){
+    var v = searchInput.value.trim();
+    toast(v ? "正在检索「" + v + "」，共找到 " + (v.length + 2) + " 条相关内容" : "请输入关键词后再检索");
+  });
+  searchInput.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){ e.preventDefault(); searchBtn.click(); }
+  });
+
+  /* ---- 点赞 / 收藏 ---- */
+  function bindToggle(attr, onMsg, offMsg, onClass){
+    $$("["+attr+"]").forEach(function(btn){
+      var b = btn.querySelector("b");
+      var base = b ? (parseInt(b.textContent,10) || 0) : 0;
+      if(b) b.textContent = "0";
+      btn.addEventListener("click", function(){
+        var on = btn.classList.toggle(onClass);
+        if(b){
+          base += on ? 1 : -1;
+          if(base < 0) base = 0;
+          b.textContent = base;
+        }
+        toast(on ? onMsg : offMsg);
+      });
+    });
+  }
+  bindToggle("data-mc-like", "已点赞，感谢支持原创作品", "已取消点赞", "mc-liked");
+  bindToggle("data-mc-save", "已收藏到我的片单", "已取消收藏", "mc-saved");
+
+  /* ---- 复制链接 / 分享 ---- */
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function(resolve){
+      var ta = document.createElement("textarea");
+      ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select();
+      try{ document.execCommand("copy"); }catch(err){}
+      document.body.removeChild(ta); resolve();
+    });
+  }
+  $$("[data-mc-share]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var shareText = "抖音风弹力插混剪每日大赛 · 今日赛题「八分音符卡点」报名进行中";
+      copyText(shareText + " " + location.origin).then(function(){
+        toast("链接已复制，可粘贴分享给同好");
+      }).catch(function(){
+        toast("分享内容：" + shareText);
+      });
+    });
+  });
+  var shareBtn = $("#mc-share-btn");
+  if(shareBtn){
+    shareBtn.addEventListener("click", function(){
+      copyText("抖音风弹力插混剪每日大赛 · 官方赛题页").then(function(){
+        toast("赛事链接已复制到剪贴板");
+      }).catch(function(){ toast("复制失败，请手动选择链接分享"); });
+    });
+  }
+
+  /* ---- 作者信息弹窗 ---- */
+  var authorData = {
+    "插帧老唐": {role:"常驻评审 · 职业广告剪辑师", works:"214", fans:"18.6 万", desc:"入行九年，做过汽车、饮料与运动品牌短片。评审只看一件事：这一刀有没有存在的理由。"},
+    "夜行剪手": {role:"签约创作者 · 城市声音采样", works:"96", fans:"9.2 万", desc:"白天上班，夜里带着录音笔走城市。先把声音采回来，再决定画面怎么剪。"},
+    "锅气研究所": {role:"垂直领域作者 · 料理声音设计", works:"73", fans:"7.8 万", desc:"两位厨师加一位剪辑师的小团队，坚持为每条作品单独录一条厨房声音轨。"},
+    "野径相机": {role:"户外影像作者 · 延时摄影", works:"58", fans:"6.4 万", desc:"常年在山野间拍露营与凌晨的风，很少加特效，宁愿多等两小时云散开。"},
+    "磁带少年": {role:"新人推荐位 · 复古低保真", works:"21", fans:"2.3 万", desc:"用旧相机和二手磁带机做片子，风格不成熟但情绪很真，公开全部退稿复盘。"},
+    "林间编导": {role:"常驻评审 · 纪录片编导", works:"45", fans:"5.1 万", desc:"看混剪也看故事，常提醒作者：节拍是骨架，情绪才是血肉。"}
+  };
+  var modal = $("#mc-modal"), modalTitle = $("#mc-modal-title"), modalSub = $(".mc-modal-sub") || $(".mc-modal-box .mc-modal-sub");
+  function openModal(title, sub){
+    modalTitle.textContent = title;
+    var subEl = $(".mc-modal-box .mc-modal-sub") || modalSub;
+    if(subEl) subEl.textContent = sub;
+    modal.classList.add("mc-on");
+  }
+  function closeModal(){ modal.classList.remove("mc-on"); }
+  $$("[data-mc-author]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var name = btn.getAttribute("data-mc-author");
+      var d = authorData[name];
+      if(!d){ toast("作者档案加载中"); return; }
+      openModal(name, d.role + " · 作品 " + d.works + " · 粉丝 " + d.fans + "。" + d.desc);
+    });
+  });
+  $("#mc-modal-cancel").addEventListener("click", closeModal);
+  modal.addEventListener("click", function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeModal(); });
+  $("#mc-modal-ok").addEventListener("click", function(){
+    var name = $("#mc-f-name").value.trim(), work = $("#mc-f-work").value.trim();
+    if(!name){ toast("请先填写创作者昵称"); return; }
+    if(!work){ toast("请填写作品标题"); return; }
+    closeModal();
+    toast("提交成功：" + name + " · 已进入 24 小时审核队列");
+  });
+
+  /* ---- 投稿入口 ---- */
+  $$("[data-mc-submit]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      openModal("投稿 / 报名", "填写基本信息后，我们会在 24 小时内通过站内消息回复。本表单为前端演示，不会真实提交。");
+    });
+  });
+
+  /* ---- 回到顶部 ---- */
+  var topBtn = $("#mc-top-btn");
+  window.addEventListener("scroll", function(){
+    if(window.pageYOffset > 480) topBtn.classList.add("mc-on");
+    else topBtn.classList.remove("mc-on");
+  }, {passive:true});
+  topBtn.addEventListener("click", function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+
+  /* ---- 数字滚动 ---- */
+  var counted = false;
+  function runCount(){
+    if(counted) return;
+    counted = true;
+    $$("[data-mc-count]").forEach(function(el){
+      var target = parseInt(el.getAttribute("data-mc-count"),10) || 0;
+      var suffix = el.querySelector("i") ? el.querySelector("i").outerHTML : "";
+      var start = null, dur = 1200;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start)/dur, 1);
+        var val = Math.floor(target * (1 - Math.pow(1-p,3)));
+        el.innerHTML = val.toLocaleString("zh-CN") + suffix;
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var hero = $(".mc-hero");
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting) runCount(); });
+    }, {threshold:0.25});
+    if(hero) io.observe(hero);
+  } else { runCount(); }
+})();
+</script>
+</body>
+  </html>
